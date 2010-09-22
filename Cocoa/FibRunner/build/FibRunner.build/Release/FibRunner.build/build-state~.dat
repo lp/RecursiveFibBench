@@ -1,0 +1,384 @@
+TFibRunner
+v7
+r0
+t306353909.908913
+cCheck dependencies
+cSymLink /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/Current A
+cSymLink /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Resources Versions/Current/Resources
+cSymLink /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/FibRunner Versions/Current/FibRunner
+cProcessInfoPlistFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/Info.plist Info.plist
+cCopyStringsFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-bhpbwkwpentezwdihnvuexlkcerx/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-cjariggazfrzzwbgumlljvlfcmlo/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-dydhlmzmoxyqbxaeubfbfgdrafjy/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+cCompileC build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner normal x86_64
+cLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner normal i386
+cCompileC build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m normal ppc objective-c com.apple.compilers.gcc.4_2
+cLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner normal ppc
+cCreateUniversalBinary /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner normal "x86_64 i386 ppc"
+cGenerateDSYMFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework.dSYM /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner
+cTouch /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004BF4701900000000000000EE
+t1274310681
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004BF4700F0000000000003430
+t1274310671
+s13360
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/English.lproj/InfoPlist.strings
+c000000004C9252CD0000000000000030
+t1284657869
+s48
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.h
+c000000004C925CD70000000000000109
+t1284660439
+s265
+i<Cocoa/Cocoa.h>
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m
+c000000004C925CE4000000000000016F
+t1284660452
+s367
+i"FibRunner.h"
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch
+c000000004C9257F80000000000000096
+t1284659192
+s150
+i<Cocoa/Cocoa.h>
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner
+t1284661109
+s13112
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner.LinkFileList
+c000000004C925F6E000000000000009C
+t1284661102
+s156
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner.o
+t1284661109
+s6472
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner
+t1284661109
+s13136
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner.LinkFileList
+c000000004C925F6E000000000000009B
+t1284661102
+s155
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner.o
+t1284661109
+s6560
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner
+t1284661109
+s9504
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner.LinkFileList
+c000000004C925F6E000000000000009E
+t1284661102
+s158
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner.o
+t1284661109
+s8172
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework
+t1284661109
+s170
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework.dSYM
+t1284661109
+s102
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/FibRunner
+t3
+s26
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Resources
+t3
+s26
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner
+t1284661109
+s45904
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+t1284661102
+s92
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/Info.plist
+t1284661102
+s720
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/Current
+t3
+s1
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-bhpbwkwpentezwdihnvuexlkcerx/FibRunner_Prefix.pch.gch
+t1284661106
+s52930320
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-cjariggazfrzzwbgumlljvlfcmlo/FibRunner_Prefix.pch.gch
+t1284661106
+s55568176
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-dydhlmzmoxyqbxaeubfbfgdrafjy/FibRunner_Prefix.pch.gch
+t1284661109
+s52799056
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-esznflebhgqkobepuihovrdclxam/FibRunner_Prefix.pch.gch
+t1284659633
+s55559984
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-gqonvbhrgxafznhhkluyilcalbae/FibRunner_Prefix.pch.gch
+t1284659632
+s52922128
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-hfhouuptznjnbcgcykjqrclenhqo/FibRunner_Prefix.pch.gch
+t1284659636
+s52794960
+
+NInfo.plist
+c000000004C9252CD0000000000000357
+t1284657869
+s855
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies306353902#306353902#0(0"0(0#1#0"8619982464#0"0#
+
+CCompileC build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306353909.480623
+e306353909.661103
+r1
+xCompileC
+xbuild/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m306353909#306353909#0(0"0(0#0#89"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m8627742144#1932"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/i386 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-cjariggazfrzzwbgumlljvlfcmlo/FibRunner_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner.o0#
+
+CCompileC build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s306353909.696409
+e306353909.836847
+r1
+xCompileC
+xbuild/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m306353909#306353909#0(0"0(0#0#89"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m8622266496#1939"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/ppc -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-dydhlmzmoxyqbxaeubfbfgdrafjy/FibRunner_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner.o0#
+
+CCompileC build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s306353909.479615
+e306353909.659922
+r1
+xCompileC
+xbuild/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m306353909#306353909#0(0"0(0#0#89"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m8628008448#1938"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/x86_64 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-bhpbwkwpentezwdihnvuexlkcerx/FibRunner_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner.m -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner.o0#
+
+CCopyStringsFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s306353902.493295
+e306353902.603819
+r1
+xCopyStringsFile
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings306353902#306353902#0(0"0(0#0#109"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/English.lproj/InfoPlist.strings8622884096#455"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/English.lproj0#
+
+CCreateUniversalBinary /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner normal "x86_64 i386 ppc"
+s306353909.863213
+e306353909.866306
+r1
+xCreateUniversalBinary
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@101"CreateUniversalBinary build/Release/FibRunner.framework/Versions/A/FibRunner normal "x86_64 i386 ppc"306353909#306353909#0(0"0(0#0#93"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/x86_64 i386 ppc8624628480#715"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    /usr/bin/lipo -create /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner -output /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner0#
+
+CGenerateDSYMFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework.dSYM /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner
+s306353909.866400
+e306353909.905068
+r1
+xGenerateDSYMFile
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework.dSYM
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner
+lSLF07#2@110"GenerateDSYMFile build/Release/FibRunner.framework.dSYM build/Release/FibRunner.framework/Versions/A/FibRunner306353909#306353909#0(0"0(0#0#132"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner8622980352#370"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    /Developer/usr/bin/dsymutil /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/FibRunner -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework.dSYM0#
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner normal i386
+s306353909.661180
+e306353909.697571
+r1
+xLd
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner
+xnormal
+xi386
+lSLF07#2@158"Link /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner306353909#306353909#0(0"0(0#0#0"8623017280#935"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -filelist /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner.LinkFileList -install_name /Users/lpperron/Library/Frameworks/FibRunner.framework/Versions/A/FibRunner -mmacosx-version-min=10.6 -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/i386/FibRunner0#
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner normal ppc
+s306353909.836948
+e306353909.863099
+r1
+xLd
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner
+xnormal
+xppc
+lSLF07#2@157"Link /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner306353909#306353909#0(0"0(0#0#0"8627643040#932"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch ppc -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -filelist /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner.LinkFileList -install_name /Users/lpperron/Library/Frameworks/FibRunner.framework/Versions/A/FibRunner -mmacosx-version-min=10.6 -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/ppc/FibRunner0#
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner normal x86_64
+s306353909.660020
+e306353909.696302
+r1
+xLd
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner
+xnormal
+xx86_64
+lSLF07#2@160"Link /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner306353909#306353909#0(0"0(0#0#0"8624857152#941"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -filelist /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner.LinkFileList -install_name /Users/lpperron/Library/Frameworks/FibRunner.framework/Versions/A/FibRunner -mmacosx-version-min=10.6 -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/Objects-normal/x86_64/FibRunner0#
+
+CProcessInfoPlistFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/Info.plist Info.plist
+s306353902.489296
+e306353902.493208
+r1
+xProcessInfoPlistFile
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist306353902#306353902#0(0"0(0#0#88"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/Info.plist8623269632#310"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/A/Resources/Info.plist0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-bhpbwkwpentezwdihnvuexlkcerx/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s306353902.603959
+e306353906.690952
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-bhpbwkwpentezwdihnvuexlkcerx/FibRunner_Prefix.pch.gch
+xFibRunner_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile FibRunner_Prefix.pch306353902#306353906#0(0"0(0#0#98"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch8622483552#1791"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/x86_64 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-bhpbwkwpentezwdihnvuexlkcerx/FibRunner_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-cjariggazfrzzwbgumlljvlfcmlo/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s306353902.604881
+e306353906.969419
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-cjariggazfrzzwbgumlljvlfcmlo/FibRunner_Prefix.pch.gch
+xFibRunner_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile FibRunner_Prefix.pch306353902#306353906#0(0"0(0#0#98"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch8622221472#1787"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/i386 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-cjariggazfrzzwbgumlljvlfcmlo/FibRunner_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-dydhlmzmoxyqbxaeubfbfgdrafjy/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s306353906.691189
+e306353909.479463
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-dydhlmzmoxyqbxaeubfbfgdrafjy/FibRunner_Prefix.pch.gch
+xFibRunner_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile FibRunner_Prefix.pch306353906#306353909#0(0"0(0#0#98"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch8623723488#1795"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fobjc-gc -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/ppc -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-dydhlmzmoxyqbxaeubfbfgdrafjy/FibRunner_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-esznflebhgqkobepuihovrdclxam/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s306352429.339721
+e306352433.878753
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-esznflebhgqkobepuihovrdclxam/FibRunner_Prefix.pch.gch
+xFibRunner_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile FibRunner_Prefix.pch306352429#306352433#0(0"0(0#0#98"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch8612694560#1777"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/i386 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-esznflebhgqkobepuihovrdclxam/FibRunner_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-gqonvbhrgxafznhhkluyilcalbae/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s306352429.338839
+e306352432.991114
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-gqonvbhrgxafznhhkluyilcalbae/FibRunner_Prefix.pch.gch
+xFibRunner_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile FibRunner_Prefix.pch306352429#306352432#0(0"0(0#0#98"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch8612768672#1781"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/x86_64 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-gqonvbhrgxafznhhkluyilcalbae/FibRunner_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-hfhouuptznjnbcgcykjqrclenhqo/FibRunner_Prefix.pch.gch FibRunner_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s306352432.991331
+e306352436.515551
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-hfhouuptznjnbcgcykjqrclenhqo/FibRunner_Prefix.pch.gch
+xFibRunner_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile FibRunner_Prefix.pch306352432#306352436#0(0"0(0#0#98"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch8627879904#1785"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/FibRunner-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources/ppc -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/FibRunner.build/Release/FibRunner.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/FibRunner_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/FibRunner_Prefix-hfhouuptznjnbcgcykjqrclenhqo/FibRunner_Prefix.pch.gch0#
+
+CSymLink /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/FibRunner Versions/Current/FibRunner
+s306353902.486016
+e306353902.489205
+r1
+xSymLink
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/FibRunner
+xVersions/Current/FibRunner
+lSLF07#2@129"Process /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/FibRunner306353902#306353902#0(0"0(0#0#0"8623738528#250"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    /bin/ln -sf Versions/Current/FibRunner /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/FibRunner0#
+
+CSymLink /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Resources Versions/Current/Resources
+s306353902.483468
+e306353902.487736
+r1
+xSymLink
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Resources
+xVersions/Current/Resources
+lSLF07#2@129"Process /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Resources306353902#306353902#0(0"0(0#0#0"8623968096#250"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    /bin/ln -sf Versions/Current/Resources /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Resources0#
+
+CSymLink /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/Current A
+s306353902.482260
+e306353902.485915
+r1
+xSymLink
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/Current
+xA
+lSLF07#2@136"Process /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/Current306353902#306353902#0(0"0(0#0#0"8624284128#232"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    /bin/ln -sf A /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework/Versions/Current0#
+
+CTouch /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework
+s306353909.905190
+e306353909.908857
+r1
+xTouch
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework
+lSLF07#2@117"Touch /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework306353909#306353909#0(0"0(0#0#0"8622869056#219"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner    /usr/bin/touch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/FibRunner/build/Release/FibRunner.framework0#
+

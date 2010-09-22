@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'objc_fib' target in the 'objc_fib' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

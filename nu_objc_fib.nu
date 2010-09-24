@@ -4,6 +4,6 @@
 
 (set argv ((NuApplication sharedApplication) arguments))
 
-(for ((set i 0) (< i ((argv objectAtIndex:0) integerValue)) (set i (+ i 1)))
-     (puts (FibRunner fib:i)))
-
+(((argv 0) integerValue) times: (do (i)
+  (puts (FibRunner fib:i))
+))

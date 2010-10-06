@@ -39,7 +39,7 @@ class Bencher
           end
           c.addTotal rank
           c.addExectime c.time
-          @results << sprintf("%25s: | %d failed | %7.3fs overall | score: %7.3f |\n", c.name, c.failed, c.time, rank)
+          @results << sprintf("%25s: | %d failed | %9.3fs overall | score: %7.3f |\n", c.name, c.failed, c.time, rank)
         end
       end
       init_run_params
@@ -47,7 +47,7 @@ class Bencher
     
     @results << "\nTotals:\n"
     @cases.sort_by { |c| c.total }.each do |c|
-      @results << sprintf("%25s: | %7.3f seconds overall | score: %7.3f |\n",c.name,c.exectime,c.total)
+      @results << sprintf("%25s: | %9.3f seconds overall | score: %8.3f |\n",c.name,c.exectime,c.total)
     end
     
     print @results

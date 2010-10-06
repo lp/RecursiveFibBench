@@ -31,7 +31,8 @@ bench = Bencher.new ARGV do
     ["coffee", lambda { |v,r| system("coffee coffee_fib.coffee %d" % v) }],
     ["js on v8", lambda { |v,r| system("d8 js_v8_fib.js -- %d" % v) }],
     ["perl", lambda { |v,r| system("./perl_fib.pl %d" % v) }],
-    ["lua", lambda { |v,r| system("./lua_fib.lua %d" % v) }]
+    ["lua", lambda { |v,r| system("./lua_fib.lua %d" % v) }],
+    ["falcon", lambda { |v,r| system("./falcon_fib.fal %d" % v) }]
     ]
 end
 

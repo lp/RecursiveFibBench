@@ -1,0 +1,12 @@
+#!/usr/local/bin/falcon
+
+function fib(n)
+	if n > 1
+		return fib(n-1) + fib(n-2)
+	else
+		return n
+	end
+end
+
+times( numeric(args[0]), { num => >( fib(num))})
+

@@ -1,161 +1,179 @@
 Case value: 5
-                     ruby: | 0 failed |     0.008s overall | score:   1.000 |
-                     objc: | 0 failed |     0.009s overall | score:   1.222 |
-                      lua: | 0 failed |     0.030s overall | score:   4.010 |
-                   falcon: | 0 failed |     0.046s overall | score:   6.061 |
-                nu w/objc: | 0 failed |     0.064s overall | score:   8.502 |
-                     perl: | 0 failed |     0.067s overall | score:   8.835 |
-            macruby w/aot: | 0 failed |     0.081s overall | score:  10.788 |
-            sbcl compiled: | 0 failed |     0.120s overall | score:  16.005 |
-                     sbcl: | 0 failed |     0.121s overall | score:  16.052 |
-                  macruby: | 0 failed |     0.163s overall | score:  21.689 |
-                 js on v8: | 0 failed |     0.187s overall | score:  24.861 |
-           macruby w/objc: | 0 failed |     0.271s overall | score:  35.991 |
-                       nu: | 0 failed |     0.329s overall | score:  43.708 |
-                   coffee: | 0 failed |     0.479s overall | score:  63.666 |
-                   python: | 0 failed |     0.505s overall | score:  67.040 |
-                    jruby: | 0 failed |     1.546s overall | score: 205.320 |
+                     ruby: | 0 failed |     0.007s overall | score:     1.000 |
+                     objc: | 0 failed |     0.009s overall | score:     1.356 |
+                     perl: | 0 failed |     0.009s overall | score:     1.390 |
+                      lua: | 0 failed |     0.022s overall | score:     3.383 |
+                nu w/objc: | 0 failed |     0.064s overall | score:     9.800 |
+            macruby w/aot: | 0 failed |     0.082s overall | score:    12.674 |
+          f-script w/objc: | 0 failed |     0.116s overall | score:    17.833 |
+                       nu: | 0 failed |     0.122s overall | score:    18.810 |
+                  macruby: | 0 failed |     0.134s overall | score:    20.541 |
+                 f-script: | 0 failed |     0.139s overall | score:    21.433 |
+            sbcl compiled: | 0 failed |     0.144s overall | score:    22.152 |
+                   falcon: | 0 failed |     0.147s overall | score:    22.587 |
+                 js on v8: | 0 failed |     0.147s overall | score:    22.605 |
+                   coffee: | 0 failed |     0.275s overall | score:    42.268 |
+                   python: | 0 failed |     0.276s overall | score:    42.481 |
+           macruby w/objc: | 0 failed |     0.533s overall | score:    81.943 |
+                    jruby: | 0 failed |     1.195s overall | score:   183.746 |
+                     sbcl: | 0 failed |     2.735s overall | score:   420.637 |
 
 Case value: 10
-                      lua: | 0 failed |     0.004s overall | score:   1.000 |
-                     ruby: | 0 failed |     0.006s overall | score:   1.382 |
-                     objc: | 0 failed |     0.009s overall | score:   2.115 |
-                     perl: | 0 failed |     0.009s overall | score:   2.328 |
-                   falcon: | 0 failed |     0.013s overall | score:   3.272 |
-                   python: | 0 failed |     0.031s overall | score:   7.698 |
-                 js on v8: | 0 failed |     0.053s overall | score:  13.020 |
-                       nu: | 0 failed |     0.062s overall | score:  15.357 |
-                nu w/objc: | 0 failed |     0.064s overall | score:  15.753 |
-            macruby w/aot: | 0 failed |     0.080s overall | score:  19.672 |
-            sbcl compiled: | 0 failed |     0.088s overall | score:  21.677 |
-                     sbcl: | 0 failed |     0.113s overall | score:  27.776 |
-                  macruby: | 0 failed |     0.123s overall | score:  30.463 |
-                   coffee: | 0 failed |     0.159s overall | score:  39.208 |
-           macruby w/objc: | 0 failed |     0.216s overall | score:  53.344 |
-                    jruby: | 0 failed |     0.679s overall | score: 167.478 |
+                      lua: | 0 failed |     0.004s overall | score:     1.000 |
+                     ruby: | 0 failed |     0.006s overall | score:     1.370 |
+                     objc: | 0 failed |     0.009s overall | score:     2.082 |
+                     perl: | 0 failed |     0.009s overall | score:     2.168 |
+                   falcon: | 0 failed |     0.013s overall | score:     3.175 |
+                   python: | 0 failed |     0.031s overall | score:     7.650 |
+                 js on v8: | 0 failed |     0.053s overall | score:    12.985 |
+                       nu: | 0 failed |     0.063s overall | score:    15.402 |
+                nu w/objc: | 0 failed |     0.064s overall | score:    15.538 |
+            macruby w/aot: | 0 failed |     0.082s overall | score:    19.835 |
+            sbcl compiled: | 0 failed |     0.090s overall | score:    21.916 |
+          f-script w/objc: | 0 failed |     0.097s overall | score:    23.574 |
+                 f-script: | 0 failed |     0.115s overall | score:    28.060 |
+                     sbcl: | 0 failed |     0.117s overall | score:    28.502 |
+                  macruby: | 0 failed |     0.125s overall | score:    30.357 |
+                   coffee: | 0 failed |     0.160s overall | score:    38.912 |
+           macruby w/objc: | 0 failed |     0.219s overall | score:    53.206 |
+                    jruby: | 0 failed |     0.703s overall | score:   170.890 |
 
 Case value: 15
-                      lua: | 0 failed |     0.004s overall | score:   1.000 |
-                     objc: | 0 failed |     0.009s overall | score:   1.980 |
-                     perl: | 0 failed |     0.011s overall | score:   2.467 |
-                   falcon: | 0 failed |     0.014s overall | score:   3.150 |
-                     ruby: | 0 failed |     0.015s overall | score:   3.469 |
-                   python: | 0 failed |     0.032s overall | score:   7.161 |
-                 js on v8: | 0 failed |     0.053s overall | score:  11.989 |
-                nu w/objc: | 0 failed |     0.066s overall | score:  14.785 |
-            macruby w/aot: | 0 failed |     0.082s overall | score:  18.381 |
-                       nu: | 0 failed |     0.091s overall | score:  20.327 |
-            sbcl compiled: | 0 failed |     0.106s overall | score:  23.795 |
-                     sbcl: | 0 failed |     0.114s overall | score:  25.603 |
-                  macruby: | 0 failed |     0.125s overall | score:  27.969 |
-                   coffee: | 0 failed |     0.160s overall | score:  35.849 |
-           macruby w/objc: | 0 failed |     0.216s overall | score:  48.385 |
-                    jruby: | 0 failed |     0.698s overall | score: 156.790 |
+                      lua: | 0 failed |     0.004s overall | score:     1.000 |
+                     ruby: | 0 failed |     0.007s overall | score:     1.702 |
+                     objc: | 0 failed |     0.009s overall | score:     2.087 |
+                     perl: | 0 failed |     0.011s overall | score:     2.656 |
+                   falcon: | 0 failed |     0.014s overall | score:     3.310 |
+                   python: | 0 failed |     0.032s overall | score:     7.737 |
+                 js on v8: | 0 failed |     0.054s overall | score:    12.874 |
+                nu w/objc: | 0 failed |     0.065s overall | score:    15.735 |
+            macruby w/aot: | 0 failed |     0.082s overall | score:    19.820 |
+            sbcl compiled: | 0 failed |     0.090s overall | score:    21.743 |
+                       nu: | 0 failed |     0.090s overall | score:    21.748 |
+          f-script w/objc: | 0 failed |     0.095s overall | score:    22.805 |
+                     sbcl: | 0 failed |     0.117s overall | score:    28.131 |
+                  macruby: | 0 failed |     0.125s overall | score:    29.987 |
+                   coffee: | 0 failed |     0.159s overall | score:    38.296 |
+           macruby w/objc: | 0 failed |     0.217s overall | score:    52.272 |
+                 f-script: | 0 failed |     0.299s overall | score:    71.919 |
+                    jruby: | 0 failed |     0.701s overall | score:   168.601 |
 
 Case value: 20
-                     objc: | 0 failed |     0.009s overall | score:   1.000 |
-                      lua: | 0 failed |     0.012s overall | score:   1.370 |
-                     ruby: | 0 failed |     0.023s overall | score:   2.641 |
-                   falcon: | 0 failed |     0.023s overall | score:   2.648 |
-                     perl: | 0 failed |     0.034s overall | score:   3.839 |
-                   python: | 0 failed |     0.041s overall | score:   4.584 |
-                 js on v8: | 0 failed |     0.055s overall | score:   6.194 |
-                nu w/objc: | 0 failed |     0.064s overall | score:   7.234 |
-            macruby w/aot: | 0 failed |     0.080s overall | score:   9.067 |
-            sbcl compiled: | 0 failed |     0.089s overall | score:  10.025 |
-                     sbcl: | 0 failed |     0.113s overall | score:  12.745 |
-                  macruby: | 0 failed |     0.125s overall | score:  14.179 |
-                   coffee: | 0 failed |     0.159s overall | score:  17.979 |
-           macruby w/objc: | 0 failed |     0.216s overall | score:  24.415 |
-                       nu: | 0 failed |     0.395s overall | score:  44.670 |
-                    jruby: | 0 failed |     0.801s overall | score:  90.661 |
+                      lua: | 0 failed |     0.008s overall | score:     1.000 |
+                     objc: | 0 failed |     0.009s overall | score:     1.165 |
+                     ruby: | 0 failed |     0.023s overall | score:     3.003 |
+                   falcon: | 0 failed |     0.027s overall | score:     3.545 |
+                     perl: | 0 failed |     0.033s overall | score:     4.274 |
+                   python: | 0 failed |     0.047s overall | score:     6.164 |
+                 js on v8: | 0 failed |     0.054s overall | score:     7.036 |
+                nu w/objc: | 0 failed |     0.064s overall | score:     8.450 |
+            macruby w/aot: | 0 failed |     0.082s overall | score:    10.828 |
+            sbcl compiled: | 0 failed |     0.091s overall | score:    11.984 |
+          f-script w/objc: | 0 failed |     0.093s overall | score:    12.244 |
+                     sbcl: | 0 failed |     0.116s overall | score:    15.272 |
+                  macruby: | 0 failed |     0.128s overall | score:    16.763 |
+                   coffee: | 0 failed |     0.160s overall | score:    21.015 |
+           macruby w/objc: | 0 failed |     0.219s overall | score:    28.771 |
+                       nu: | 0 failed |     0.404s overall | score:    53.040 |
+                    jruby: | 0 failed |     0.853s overall | score:   112.039 |
+                 f-script: | 0 failed |     2.275s overall | score:   298.831 |
 
 Case value: 25
-                     objc: | 0 failed |     0.011s overall | score:   1.000 |
-                      lua: | 0 failed |     0.046s overall | score:   4.314 |
-                 js on v8: | 0 failed |     0.056s overall | score:   5.283 |
-                nu w/objc: | 0 failed |     0.066s overall | score:   6.164 |
-            macruby w/aot: | 0 failed |     0.085s overall | score:   8.040 |
-            sbcl compiled: | 0 failed |     0.094s overall | score:   8.839 |
-                   falcon: | 0 failed |     0.109s overall | score:  10.286 |
-                     sbcl: | 0 failed |     0.120s overall | score:  11.330 |
-                  macruby: | 0 failed |     0.133s overall | score:  12.555 |
-                   python: | 0 failed |     0.137s overall | score:  12.887 |
-                   coffee: | 0 failed |     0.164s overall | score:  15.428 |
-                     ruby: | 0 failed |     0.199s overall | score:  18.672 |
-           macruby w/objc: | 0 failed |     0.219s overall | score:  20.582 |
-                     perl: | 0 failed |     0.277s overall | score:  26.063 |
-                    jruby: | 0 failed |     0.906s overall | score:  85.204 |
-                       nu: | 0 failed |     3.862s overall | score: 363.222 |
+                     objc: | 0 failed |     0.011s overall | score:     1.000 |
+                      lua: | 0 failed |     0.046s overall | score:     4.210 |
+                 js on v8: | 0 failed |     0.058s overall | score:     5.358 |
+                nu w/objc: | 0 failed |     0.066s overall | score:     6.058 |
+            macruby w/aot: | 0 failed |     0.089s overall | score:     8.127 |
+            sbcl compiled: | 0 failed |     0.096s overall | score:     8.825 |
+          f-script w/objc: | 0 failed |     0.100s overall | score:     9.183 |
+                     sbcl: | 0 failed |     0.124s overall | score:    11.411 |
+                   falcon: | 0 failed |     0.135s overall | score:    12.333 |
+                  macruby: | 0 failed |     0.136s overall | score:    12.461 |
+                   python: | 0 failed |     0.136s overall | score:    12.487 |
+                   coffee: | 0 failed |     0.166s overall | score:    15.182 |
+                     ruby: | 0 failed |     0.199s overall | score:    18.269 |
+           macruby w/objc: | 0 failed |     0.219s overall | score:    20.065 |
+                     perl: | 0 failed |     0.275s overall | score:    25.164 |
+                    jruby: | 0 failed |     0.854s overall | score:    78.260 |
+                       nu: | 0 failed |     3.824s overall | score:   350.476 |
+                 f-script: | 0 failed |    24.284s overall | score:  2225.848 |
 
 Case value: 30
-                     objc: | 0 failed |     0.031s overall | score:   1.000 |
-                 js on v8: | 0 failed |     0.089s overall | score:   2.837 |
-                nu w/objc: | 0 failed |     0.093s overall | score:   2.968 |
-            macruby w/aot: | 0 failed |     0.145s overall | score:   4.618 |
-            sbcl compiled: | 0 failed |     0.154s overall | score:   4.903 |
-                     sbcl: | 0 failed |     0.181s overall | score:   5.759 |
-                   coffee: | 0 failed |     0.225s overall | score:   7.186 |
-                  macruby: | 0 failed |     0.237s overall | score:   7.546 |
-           macruby w/objc: | 0 failed |     0.238s overall | score:   7.587 |
-                      lua: | 0 failed |     0.467s overall | score:  14.887 |
-                   falcon: | 0 failed |     1.078s overall | score:  34.403 |
-                    jruby: | 0 failed |     1.104s overall | score:  35.218 |
-                   python: | 0 failed |     1.108s overall | score:  35.365 |
-                     ruby: | 0 failed |     2.122s overall | score:  67.708 |
-                     perl: | 0 failed |     2.961s overall | score:  94.456 |
-                       nu: | 0 failed |    41.113s overall | score: 1311.687 |
+                     objc: | 0 failed |     0.032s overall | score:     1.000 |
+                nu w/objc: | 0 failed |     0.090s overall | score:     2.866 |
+                 js on v8: | 0 failed |     0.092s overall | score:     2.927 |
+          f-script w/objc: | 0 failed |     0.134s overall | score:     4.260 |
+            macruby w/aot: | 0 failed |     0.146s overall | score:     4.624 |
+            sbcl compiled: | 0 failed |     0.156s overall | score:     4.945 |
+                     sbcl: | 0 failed |     0.184s overall | score:     5.845 |
+                   coffee: | 0 failed |     0.225s overall | score:     7.153 |
+                  macruby: | 0 failed |     0.234s overall | score:     7.441 |
+           macruby w/objc: | 0 failed |     0.241s overall | score:     7.654 |
+                      lua: | 0 failed |     0.465s overall | score:    14.769 |
+                   falcon: | 0 failed |     1.071s overall | score:    33.993 |
+                    jruby: | 0 failed |     1.103s overall | score:    35.010 |
+                   python: | 0 failed |     1.107s overall | score:    35.132 |
+                     ruby: | 0 failed |     2.125s overall | score:    67.452 |
+                     perl: | 0 failed |     2.952s overall | score:    93.696 |
+                       nu: | 0 failed |    42.562s overall | score:  1351.047 |
+                 f-script: | 0 failed |   274.925s overall | score:  8726.948 |
 
 Case value: 35
-                     objc: | 0 failed |     0.258s overall | score:   1.000 |
-                nu w/objc: | 0 failed |     0.317s overall | score:   1.228 |
-                 js on v8: | 0 failed |     0.454s overall | score:   1.763 |
-           macruby w/objc: | 0 failed |     0.469s overall | score:   1.821 |
-            macruby w/aot: | 0 failed |     0.787s overall | score:   3.055 |
-            sbcl compiled: | 0 failed |     0.812s overall | score:   3.153 |
-                     sbcl: | 0 failed |     0.838s overall | score:   3.252 |
-                   coffee: | 0 failed |     0.852s overall | score:   3.308 |
-                  macruby: | 0 failed |     1.351s overall | score:   5.243 |
-                    jruby: | 0 failed |     3.954s overall | score:  15.345 |
-                      lua: | 0 failed |     5.185s overall | score:  20.124 |
-                   falcon: | 0 failed |    11.604s overall | score:  45.035 |
-                   python: | 0 failed |    11.885s overall | score:  46.126 |
-                     ruby: | 0 failed |    23.479s overall | score:  91.120 |
-                     perl: | 0 failed |    32.585s overall | score: 126.459 |
-                       nu: | 0 failed |   456.417s overall | score: 1771.301 |
+                     objc: | 0 failed |     0.257s overall | score:     1.000 |
+                nu w/objc: | 0 failed |     0.318s overall | score:     1.235 |
+          f-script w/objc: | 0 failed |     0.350s overall | score:     1.361 |
+                 js on v8: | 0 failed |     0.454s overall | score:     1.763 |
+           macruby w/objc: | 0 failed |     0.463s overall | score:     1.800 |
+            macruby w/aot: | 0 failed |     0.784s overall | score:     3.046 |
+            sbcl compiled: | 0 failed |     0.818s overall | score:     3.178 |
+                     sbcl: | 0 failed |     0.842s overall | score:     3.274 |
+                   coffee: | 0 failed |     0.853s overall | score:     3.314 |
+                  macruby: | 0 failed |     1.380s overall | score:     5.364 |
+                    jruby: | 0 failed |     3.956s overall | score:    15.372 |
+                      lua: | 0 failed |     5.125s overall | score:    19.919 |
+                   falcon: | 0 failed |    11.598s overall | score:    45.074 |
+                   python: | 0 failed |    11.875s overall | score:    46.150 |
+                     ruby: | 0 failed |    23.344s overall | score:    90.725 |
+                     perl: | 0 failed |    32.544s overall | score:   126.477 |
+                       nu: | 0 failed |   473.608s overall | score:  1840.603 |
+                 f-script: | 0 failed |  3330.532s overall | score: 12943.599 |
 
 Case value: 40
-                     objc: | 0 failed |     2.793s overall | score:   1.000 |
-           macruby w/objc: | 0 failed |     2.910s overall | score:   1.042 |
-                nu w/objc: | 0 failed |     3.858s overall | score:   1.381 |
-                 js on v8: | 0 failed |     4.637s overall | score:   1.660 |
-            macruby w/aot: | 0 failed |     7.823s overall | score:   2.800 |
-                   coffee: | 0 failed |     8.222s overall | score:   2.943 |
-            sbcl compiled: | 0 failed |     8.262s overall | score:   2.958 |
-                     sbcl: | 0 failed |    10.552s overall | score:   3.777 |
-                  macruby: | 0 failed |    13.633s overall | score:   4.880 |
-                    jruby: | 0 failed |    35.735s overall | score:  12.792 |
-                      lua: | 0 failed |    57.206s overall | score:  20.479 |
-                   python: | 0 failed |   131.953s overall | score:  47.236 |
-                   falcon: | 0 failed |   139.800s overall | score:  50.045 |
-                     ruby: | 0 failed |   258.709s overall | score:  92.612 |
-                     perl: | 0 failed |   361.831s overall | score: 129.528 |
-                       nu: | 0 failed |  6232.026s overall | score: 2230.930 |
+                     objc: | 0 failed |     2.785s overall | score:     1.000 |
+           macruby w/objc: | 0 failed |     2.909s overall | score:     1.045 |
+          f-script w/objc: | 0 failed |     3.217s overall | score:     1.155 |
+                nu w/objc: | 0 failed |     4.319s overall | score:     1.551 |
+                 js on v8: | 0 failed |     4.660s overall | score:     1.673 |
+            macruby w/aot: | 0 failed |     7.818s overall | score:     2.807 |
+                   coffee: | 0 failed |     8.102s overall | score:     2.909 |
+            sbcl compiled: | 0 failed |     8.202s overall | score:     2.945 |
+                     sbcl: | 0 failed |    10.506s overall | score:     3.772 |
+                  macruby: | 0 failed |    13.866s overall | score:     4.979 |
+                    jruby: | 0 failed |    35.971s overall | score:    12.916 |
+                      lua: | 0 failed |    56.933s overall | score:    20.442 |
+                   falcon: | 0 failed |   125.456s overall | score:    45.046 |
+                   python: | 0 failed |   131.910s overall | score:    47.364 |
+                     ruby: | 0 failed |   259.228s overall | score:    93.078 |
+                     perl: | 0 failed |   360.102s overall | score:   129.298 |
+                       nu: | 0 failed |  6375.526s overall | score:  2289.197 |
+                 f-script: | 0 failed | 38450.093s overall | score: 13805.894 |
 
 Totals:
-                     objc: |     3.129 seconds overall | score:   10.317 |
-                nu w/objc: |     4.590 seconds overall | score:   58.015 |
-                      lua: |    62.955 seconds overall | score:   67.183 |
-                 js on v8: |     5.584 seconds overall | score:   67.607 |
-            macruby w/aot: |     9.163 seconds overall | score:   76.421 |
-            sbcl compiled: |     9.725 seconds overall | score:   91.354 |
-                     sbcl: |    12.151 seconds overall | score:  106.294 |
-                  macruby: |    15.891 seconds overall | score:  124.525 |
-                   falcon: |   152.688 seconds overall | score:  154.901 |
-                   coffee: |    10.421 seconds overall | score:  185.566 |
-           macruby w/objc: |     4.754 seconds overall | score:  193.166 |
-                   python: |   145.692 seconds overall | score:  228.097 |
-                     ruby: |   284.561 seconds overall | score:  278.604 |
-                     perl: |   397.775 seconds overall | score:  393.975 |
-                    jruby: |    45.422 seconds overall | score:  768.808 |
-                       nu: |  6734.294 seconds overall | score: 5801.203 |
+                     objc: |     3.120 seconds overall | score:    10.691 |
+                nu w/objc: |     5.051 seconds overall | score:    61.231 |
+                      lua: |    62.607 seconds overall | score:    65.724 |
+                 js on v8: |     5.572 seconds overall | score:    67.221 |
+            macruby w/aot: |     9.165 seconds overall | score:    81.761 |
+          f-script w/objc: |     4.202 seconds overall | score:    92.415 |
+            sbcl compiled: |     9.687 seconds overall | score:    97.688 |
+                  macruby: |    16.128 seconds overall | score:   127.895 |
+                   coffee: |    10.100 seconds overall | score:   169.050 |
+                   falcon: |   138.460 seconds overall | score:   169.064 |
+                   python: |   145.415 seconds overall | score:   205.164 |
+           macruby w/objc: |     5.021 seconds overall | score:   246.756 |
+                     ruby: |   284.939 seconds overall | score:   276.599 |
+                     perl: |   395.934 seconds overall | score:   385.124 |
+                     sbcl: |    14.743 seconds overall | score:   516.843 |
+                    jruby: |    45.336 seconds overall | score:   776.835 |
+                       nu: |  6896.199 seconds overall | score:  5940.324 |
+                 f-script: | 42082.663 seconds overall | score: 38122.532 |

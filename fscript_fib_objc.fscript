@@ -1,0 +1,6 @@
+#! /usr/bin/fscript
+
+(NSBundle bundleWithPath:'./FibRunner.framework') load.
+
+0 to:((NSNumber numberWithInt:((sys args objectAtIndex:0) intValue))-1) do:[ :num |
+    sys out println:(FibRunner fib:num).].

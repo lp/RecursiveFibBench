@@ -1,19 +1,5 @@
 #!/usr/bin/env ruby
 
-# require 'benchmark'
-# 
-# n = 10
-# Benchmark.bm do |x|
-#   x.report("ruby %d" % n) { system("./ruby_fib.rb %d" % n) }
-#   x.report("macruby %d" % n) { system("./macruby_fib.rb %d" % n)}
-#   x.report("macruby w/objc %d" % n) { system("./macruby_objc_fib.rb %d" % n) }
-#   x.report("nu %d" % n) { system("./nu_fib.nu %d" % n) }
-#   x.report("nu w/objc %d" % n) { system("./nu_objc_fib.nu %d" % n)}
-#   x.report("python %d" % n) { system("./python_fib.py %d" % n) }
-#   x.report("sbcl %d" % n) { system("./sbcl_fib.lisp %d" % n)}
-#   x.report("objc %d" % n) { system("./objc_fib -n %d" % n) }
-# end
-
 require 'bencher'
 
 bench = Bencher.new ARGV do
@@ -32,7 +18,9 @@ bench = Bencher.new ARGV do
     ["js on v8", lambda { |v,r| system("d8 js_v8_fib.js -- %d" % v) }],
     ["perl", lambda { |v,r| system("./perl_fib.pl %d" % v) }],
     ["lua", lambda { |v,r| system("./lua_fib.lua %d" % v) }],
-    ["falcon", lambda { |v,r| system("./falcon_fib.fal %d" % v) }]
+    ["falcon", lambda { |v,r| system("./falcon_fib.fal %d" % v) }],
+    ["f-script", lambda { |v,r| system("./fscript_fib.fscript %d" % v) }],
+    ["f-script w/objc", lambda { |v,r| system("./fscript_fib_objc.fscript %d" % v) }]
     ]
 end
 

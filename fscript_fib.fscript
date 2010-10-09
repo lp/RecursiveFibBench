@@ -1,0 +1,8 @@
+#! /usr/bin/fscript
+
+fib := [ :n |
+	n > 1 ifTrue:[fib return:((fib value:(n-1)) + (fib value:(n-2))).]
+	ifFalse:[fib return:n.]].
+
+0 to:((NSNumber numberWithInt:((sys args objectAtIndex:0) intValue))-1) do:[ :num |
+    sys out println:(fib value:num).].

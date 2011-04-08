@@ -20,7 +20,15 @@ bench = Bencher.new ARGV do
     ["lua", lambda { |v,r| system("./lua_fib.lua %d" % v) }],
     ["falcon", lambda { |v,r| system("./falcon_fib.fal %d" % v) }],
     ["f-script", lambda { |v,r| system("./fscript_fib.fscript %d" % v) }],
-    ["f-script w/objc", lambda { |v,r| system("./fscript_fib_objc.fscript %d" % v) }]
+    ["f-script w/objc", lambda { |v,r| system("./fscript_fib_objc.fscript %d" % v) }],
+    ["haskell interpreted", lambda { |v,r| system("runghc haskell_fib.hs %d" % v) }],
+    ["haskell compiled", lambda { |v,r| system("./haskell_fib %d" % v)}],
+    ["racket interpreted", lambda { |v,r| system("racket racket_fib.rkt %d" % v) }],
+    ["racket compiled", lambda { |v,r| system("racket racket_fib_compiled_rkt.zo %d" % v) }],
+    ["rubinius", lambda { |v,r| system("rbx ./ruby_fib.rb %d" % v) } ],
+    ["go", lambda { |v,r| system("./go_fib %d" % v) }],
+    ["erlang", lambda { |v,r| system("erl -run erlang_fib -- %d -run init stop -noshell" % v) }],
+    ["scala", lambda { |v,r| system("scala ScalaFib %d" % v) }]
     ]
 end
 

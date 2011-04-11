@@ -3,7 +3,8 @@
 require 'bencher'
 
 bench = Bencher.new ARGV[0].to_i, ARGV[1].to_i do
-  [["ruby", lambda { |v,r| system("./ruby_fib.rb %d" % v) } ],
+  [["ruby 1.8.7", lambda { |v,r| system("./ruby_fib.rb %d" % v) } ],
+    ["ruby 1.9.2", lambda { |v,r| system("/usr/local/Cellar/ruby/1.9.2-p180/bin/ruby ruby_fib.rb %d" % v) } ],
     ["macruby", lambda { |v,r| system("./macruby_fib.rb %d" % v) }],
     ["macruby w/objc", lambda { |v,r| system("./macruby_objc_fib.rb %d" % v) }],
     ["macruby w/aot", lambda { |v,r| system("./macruby_fib_aot %d" % v) }],
@@ -31,7 +32,8 @@ bench = Bencher.new ARGV[0].to_i, ARGV[1].to_i do
     ["go", lambda { |v,r| system("./go_fib %d" % v) }],
     ["erlang", lambda { |v,r| system("erl -run erlang_fib -- %d -run init stop -noshell" % v) }],
     ["scala", lambda { |v,r| system("scala ScalaFib %d" % v) }],
-    ["tcl", lambda { |v,r| system("./tcl_fib.tcl %d" % v) }]
+    ["tcl", lambda { |v,r| system("./tcl_fib.tcl %d" % v) }],
+    ["bash", lambda { |v,r| system("./bash_fib.sh %d" % v) }]
     ]
 end
 

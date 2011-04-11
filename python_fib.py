@@ -10,4 +10,4 @@ def fib(n):
     
 
 for i in range( int( sys.argv[1])):
-  print fib(i)
+  print(fib(i))

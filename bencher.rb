@@ -1,34 +1,45 @@
 class Bencher
   require 'benchmark'
   
-  def initialize(values,&block)
+  def initialize(incr,treshold,&block)
     @results = ""
-    
-    @values = values
+    @treshold = treshold
+    @incr = incr
+    @actual = 0
     @cases = Array.new
+    @fails = Array.new
+    
     block.call.each do |c|
       @cases << BenchCase.new(c[0],c[1])
     end
+    @yard = @cases.length
   end
   
   def run(*rang)
     rang = [1] if rang == []
     
-    @values.each do |v|
+    while (@cases.length > 0) do
+      @actual += @incr
       rang.each do |r|
         @cases.each do |c|
+          puts "\n#{c.name}:"
           success = nil
-          rez = Benchmark.realtime { success = c.proc.call(v,r) }
+          rez = Benchmark.realtime { success = c.proc.call(@actual,r) }
           if success
             c.addTime rez
             c.success!
           else
             c.failed!
           end
+          puts "-> %9.3fs" % rez
+          
+          if rez >= @treshold
+            puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| GAME OVER %s! |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" % c.name.upcase
+          end
         end
         best = 1
 
-        @results << sprintf("\nCase value: " + v.to_s + "\n")
+        @results << sprintf("\nCase value: " + @actual.to_s + "\n")
         @cases.sort_by { |c| c.average }.each_with_index do |c,i|
           rank = 0
           if i == 0
@@ -39,15 +50,20 @@ class Bencher
           end
           c.addTotal rank
           c.addExectime c.time
+          c.addPoints(@yard - i)
           @results << sprintf("%25s: | %d failed | %9.3fs overall | score: %9.3f |\n", c.name, c.failed, c.time, rank)
         end
+        
+        @fails += @cases.select { |c| c.time >= @treshold}
+        @cases.reject! { |c| c.time >= @treshold}
+        
       end
       init_run_params
     end
     
     @results << "\nTotals:\n"
-    @cases.sort_by { |c| c.total }.each do |c|
-      @results << sprintf("%25s: | %9.3f seconds overall | score: %9.3f |\n",c.name,c.exectime,c.total)
+    (@cases+@fails).sort_by { |c| c.points }.reverse.each do |c|
+      @results << sprintf("%25s: %3d | time: %9.3f score: %9.3f |\n",c.name,c.points,c.exectime,c.total)
     end
     
     print @results
@@ -61,13 +77,14 @@ end
 
 class BenchCase
   
-  attr_reader :name, :proc, :exectime, :total, :time, :average, :success, :failed
+  attr_reader :name, :proc, :exectime, :total, :time, :average, :success, :failed, :points
   
   def initialize(name,l)
     @name = name
     @proc = l
     @exectime = 0.0
     @total = 0.0
+    @points = 0
     init_params
   end
   
@@ -102,6 +119,10 @@ class BenchCase
   
   def addExectime(t)
     @exectime += t
+  end
+  
+  def addPoints(n)
+    @points += n
   end
   
 end

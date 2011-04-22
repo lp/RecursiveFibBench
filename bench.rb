@@ -33,7 +33,9 @@ bench = Bencher.new ARGV[0].to_i, ARGV[1].to_i do
     ["erlang", lambda { |v,r| system("erl -run erlang_fib -- %d -run init stop -noshell" % v) }],
     ["scala", lambda { |v,r| system("scala ScalaFib %d" % v) }],
     ["tcl", lambda { |v,r| system("./tcl_fib.tcl %d" % v) }],
-    ["bash", lambda { |v,r| system("./bash_fib.sh %d" % v) }]
+    ["bash", lambda { |v,r| system("./bash_fib.sh %d" % v) }],
+    ["gambit interpreted", lambda { |v,r| system("./gambit_fib.scm %d" % v) }],
+    ["gambit compiled", lambda { |v,r| system("./gambit_fib %d" % v) }]
     ]
 end
 

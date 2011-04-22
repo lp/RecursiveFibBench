@@ -1,0 +1,430 @@
+Tobjc_fib
+v7
+r0
+t306355894.483011
+cCheck dependencies
+cProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fkwjojnohphqlxflpcdhbjpkfvnb/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-drxmnslnwxixdvbtgykhtbdlbkut/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/fibonacci.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c normal x86_64 c com.apple.compilers.gcc.4_2
+cLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib normal x86_64
+cGenerateDSYMFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib.dSYM /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C23AA0400000000000013E6
+t1277405700
+s5094
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CD605D10000000000B3E910
+t1289094609
+s11790608
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib
+t1284663094
+s9816
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib.dSYM
+t1284663094
+s102
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/fibonacci.o
+t1284662344
+s1964
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib
+t1284662344
+s13652
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib.LinkFileList
+c000000004C9264430000000000000131
+t1284662339
+s305
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib.o
+t1284662344
+s6636
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/fibonacci.o
+t1284662344
+s2012
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib
+t1284662344
+s13420
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib.LinkFileList
+c000000004C926443000000000000012F
+t1284662339
+s303
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib.o
+t1284662344
+s6940
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/fibonacci.o
+t1284662423
+s2480
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib
+t1284662344
+s9816
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.LinkFileList
+c000000004C9264950000000000000135
+t1284662421
+s309
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.o
+t1284663094
+s7880
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c
+c000000004C9263A000000000000000EA
+t1284662176
+s234
+i"fibonacci.h"
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.h
+c000000004C9263A500000000000000A6
+t1284662181
+s166
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m
+c000000004C9267340000000000000189
+t1284663092
+s393
+i<Foundation/Foundation.h>
+i"fibonacci.h"
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch
+c000000004C926020000000000000009E
+t1284661280
+s158
+i<Foundation/Foundation.h>
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/Release/objc_fib
+t1284663094
+s9816
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/Release/objc_fib.dSYM
+t1284663094
+s102
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/fibonacci.o
+t1284662423
+s2480
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.LinkFileList
+c000000004C9264950000000000000135
+t1284662421
+s309
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.o
+t1284663094
+s7880
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/fibonacci.c
+c000000004C9263A000000000000000EA
+t1284662176
+s234
+i"fibonacci.h"
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/fibonacci.h
+c000000004C9263A500000000000000A6
+t1284662181
+s166
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/objc_fib.m
+c000000004C9267340000000000000189
+t1284663092
+s393
+i<Foundation/Foundation.h>
+i"fibonacci.h"
+
+N/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/objc_fib_Prefix.pch
+c000000004C926020000000000000009E
+t1284661280
+s158
+i<Foundation/Foundation.h>
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-aicrmxeaasykpxdjbxunksldqrmk/objc_fib_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-aqffbjbdowykzzaxqvrgiuhrkkpu/objc_fib_Prefix.pch.gch
+t1284662342
+s42564400
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-drxmnslnwxixdvbtgykhtbdlbkut/objc_fib_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-ffccefaboljwzveqkpzerkiqsygj/objc_fib_Prefix.pch.gch
+t1284662344
+s39856720
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fkwjojnohphqlxflpcdhbjpkfvnb/objc_fib_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fnsjjfodaeuixtdyothiqmtjmeny/objc_fib_Prefix.pch.gch
+t1284662342
+s2187632
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fsrdcetkmzjheefapnjggevrriir/objc_fib_Prefix.pch.gch
+t1284662343
+s1950064
+
+N/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-gijurjvfsfrmsudlqpebddmcccjn/objc_fib_Prefix.pch.gch
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies306355894#306355894#0(0"0(0#1#0"8628893120#0"0#
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/fibonacci.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c normal i386 c com.apple.compilers.gcc.4_2
+s306355144.741682
+e306355144.780038
+r1
+xCompileC
+xbuild/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/fibonacci.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c306355144#306355144#0(0"0(0#0#88"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c8627121216#2024"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/i386 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fnsjjfodaeuixtdyothiqmtjmeny/objc_fib_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/fibonacci.o0#
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s306355144.627163
+e306355144.777699
+r1
+xCompileC
+xbuild/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m306355144#306355144#0(0"0(0#0#87"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m8621793536#2032"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/i386 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-aqffbjbdowykzzaxqvrgiuhrkkpu/objc_fib_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib.o0#
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/fibonacci.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c normal ppc c com.apple.compilers.gcc.4_2
+s306355144.801101
+e306355144.902554
+r1
+xCompileC
+xbuild/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/fibonacci.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c
+xnormal
+xppc
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c306355144#306355144#0(0"0(0#0#88"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c8622846048#2031"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/ppc -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fsrdcetkmzjheefapnjggevrriir/objc_fib_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/fibonacci.o0#
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m normal ppc objective-c com.apple.compilers.gcc.4_2
+s306355144.778126
+e306355144.908267
+r1
+xCompileC
+xbuild/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m306355144#306355144#0(0"0(0#0#87"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m8624121088#2039"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/ppc -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-ffccefaboljwzveqkpzerkiqsygj/objc_fib_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib.o0#
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/fibonacci.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c normal x86_64 c com.apple.compilers.gcc.4_2
+s306355223.394460
+e306355223.435231
+r1
+xCompileC
+xbuild/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/fibonacci.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@96"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c306355223#306355223#0(0"0(0#0#88"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c8621270560#2030"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/x86_64 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-drxmnslnwxixdvbtgykhtbdlbkut/objc_fib_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/fibonacci.c -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/fibonacci.o0#
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/fibonacci.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/fibonacci.c normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s306355894.190084
+e306355894.445254
+r1
+xCompileC
+xbuild/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.o
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m306355894#306355894#0(0"0(0#0#87"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m8621534912#2038"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/x86_64 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -include /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fkwjojnohphqlxflpcdhbjpkfvnb/objc_fib_Prefix.pch -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib.m -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.o0#
+
+CCompileC build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/objc_fib.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCreateUniversalBinary /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib normal "x86_64 i386 ppc"
+s306355145.129229
+e306355145.136992
+r1
+xCreateUniversalBinary
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib
+xnormal
+xx86_64 i386 ppc
+lSLF07#2@69"CreateUniversalBinary build/Release/objc_fib normal "x86_64 i386 ppc"306355145#306355145#0(0"0(0#0#92"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/x86_64 i386 ppc8622241056#669"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    /usr/bin/lipo -create /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib -output /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib0#
+
+CGenerateDSYMFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib.dSYM /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib
+s306355894.464477
+e306355894.482966
+r1
+xGenerateDSYMFile
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib.dSYM
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib
+lSLF07#2@67"GenerateDSYMFile build/Release/objc_fib.dSYM build/Release/objc_fib306355894#306355894#0(0"0(0#0#99"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib8594359424#324"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    /Developer/usr/bin/dsymutil /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib.dSYM0#
+
+CGenerateDSYMFile /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/Release/objc_fib.dSYM /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/Release/objc_fib
+r0
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib normal x86_64
+s306355894.445334
+e306355894.464384
+r1
+xLd
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib
+xnormal
+xx86_64
+lSLF07#2@104"Link /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib306355894#306355894#0(0"0(0#0#0"8622123072#828"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -filelist /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/objc_fib0#
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib normal i386
+s306355144.780120
+e306355144.801005
+r1
+xLd
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib
+xnormal
+xi386
+old: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not found
+old: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found
+lSLF07#2@154"Link /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib306355144#306355144#0(278"ld: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not foundld: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found2(22@125"Directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not found306355144#0#139#0(6@0"306355144#0#0#0#0#0"0(22@125"Directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found306355144#139#139#0(6@0"306355144#0#0#0#0#0"0(0#0#0"8623669184#874"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -filelist /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/i386/objc_fib0#
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib normal ppc
+s306355144.908480
+e306355145.129082
+r1
+xLd
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib
+xnormal
+xppc
+old: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not found
+old: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found
+lSLF07#2@153"Link /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib306355144#306355145#0(278"ld: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not foundld: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found2(22@125"Directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not found306355145#0#139#0(6@0"306355145#0#0#0#0#0"0(22@125"Directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found306355145#139#139#0(6@0"306355145#0#0#0#0#0"0(0#0#0"8624146208#871"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch ppc -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -filelist /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/ppc/objc_fib0#
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib normal x86_64
+s306355144.714113
+e306355144.741582
+r1
+xLd
+x/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib
+xnormal
+xx86_64
+old: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not found
+old: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found
+lSLF07#2@156"Link /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib306355144#306355144#0(278"ld: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not foundld: warning: directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found2(22@125"Directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -L not found306355144#0#139#0(6@0"306355144#0#0#0#0#0"0(22@125"Directory '/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release' following -F not found306355144#139#139#0(6@0"306355144#0#0#0#0#0"0(0#0#0"8610766304#880"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -filelist /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -o /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/Objects-normal/x86_64/objc_fib0#
+
+CLd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_tailfib/build/Release/objc_fib normal x86_64
+r0
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-aicrmxeaasykpxdjbxunksldqrmk/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-aqffbjbdowykzzaxqvrgiuhrkkpu/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s306355139.882228
+e306355142.775797
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-aqffbjbdowykzzaxqvrgiuhrkkpu/objc_fib_Prefix.pch.gch
+xobjc_fib_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile objc_fib_Prefix.pch306355139#306355142#0(0"0(0#0#96"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch8621955360#1891"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/i386 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-aqffbjbdowykzzaxqvrgiuhrkkpu/objc_fib_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-drxmnslnwxixdvbtgykhtbdlbkut/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
+s306355221.300377
+e306355221.360053
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-drxmnslnwxixdvbtgykhtbdlbkut/objc_fib_Prefix.pch.gch
+xobjc_fib_Prefix.pch
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile objc_fib_Prefix.pch306355221#306355221#0(0"0(0#0#96"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch8629684352#1885"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/x86_64 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-drxmnslnwxixdvbtgykhtbdlbkut/objc_fib_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-ffccefaboljwzveqkpzerkiqsygj/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal ppc objective-c com.apple.compilers.gcc.4_2
+s306355142.538634
+e306355144.565944
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-ffccefaboljwzveqkpzerkiqsygj/objc_fib_Prefix.pch.gch
+xobjc_fib_Prefix.pch
+xnormal
+xppc
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile objc_fib_Prefix.pch306355142#306355144#0(0"0(0#0#96"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch8630294112#1899"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/ppc -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-ffccefaboljwzveqkpzerkiqsygj/objc_fib_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fkwjojnohphqlxflpcdhbjpkfvnb/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s306355221.299294
+e306355223.392827
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fkwjojnohphqlxflpcdhbjpkfvnb/objc_fib_Prefix.pch.gch
+xobjc_fib_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile objc_fib_Prefix.pch306355221#306355223#0(0"0(0#0#96"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch8629845792#1895"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/x86_64 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fkwjojnohphqlxflpcdhbjpkfvnb/objc_fib_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fnsjjfodaeuixtdyothiqmtjmeny/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal i386 c com.apple.compilers.gcc.4_2
+s306355142.400163
+e306355142.538504
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fnsjjfodaeuixtdyothiqmtjmeny/objc_fib_Prefix.pch.gch
+xobjc_fib_Prefix.pch
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile objc_fib_Prefix.pch306355142#306355142#0(0"0(0#0#96"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch8629963488#1881"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/i386 -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fnsjjfodaeuixtdyothiqmtjmeny/objc_fib_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fsrdcetkmzjheefapnjggevrriir/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal ppc c com.apple.compilers.gcc.4_2
+s306355142.775905
+e306355143.123450
+r1
+xProcessPCH
+x/var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fsrdcetkmzjheefapnjggevrriir/objc_fib_Prefix.pch.gch
+xobjc_fib_Prefix.pch
+xnormal
+xppc
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@30"Precompile objc_fib_Prefix.pch306355142#306355143#0(0"0(0#0#96"/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch8617690432#1889"    cd /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c-header -arch ppc -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mtune=G5 -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-generated-files.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-own-target-headers.hmap -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-all-target-headers.hmap -iquote /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/objc_fib-project-headers.hmap -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release -F/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/../FibRunner/build/Release -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/Release/include -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources/ppc -I/Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/build/objc_fib.build/Release/objc_fib.build/DerivedSources -c /Users/lpperron/Documents/lllaptop/git_repos/buffer/fib_bench/Cocoa/objc_fib/objc_fib_Prefix.pch -o /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-fsrdcetkmzjheefapnjggevrriir/objc_fib_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/mC/mCxAOxLoFCuWvYmrR7CGNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/objc_fib_Prefix-gijurjvfsfrmsudlqpebddmcccjn/objc_fib_Prefix.pch.gch objc_fib_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+r0
+

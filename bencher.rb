@@ -1,7 +1,12 @@
 class Bencher
   require 'benchmark'
+  require 'rubygems'
+  require 'json'
   
   def initialize(incr,treshold,&block)
+    @jsonBase = {:cols => [{:id => 'fib', :label => 'fib', :type => 'string'}], :rows => []}
+    @tempOut = {}
+    @maxValues = {}
     @results = ""
     @treshold = treshold
     @incr = incr
@@ -10,7 +15,9 @@ class Bencher
     @fails = Array.new
     
     block.call.each do |c|
-      @cases << BenchCase.new(c[0],c[1])
+      bCase = BenchCase.new(c[0],c[1])
+      @cases << bCase
+      @jsonBase[:cols] << {:id => c[0], :label => c[0], :type => 'number'}
     end
     @yard = @cases.length
   end
@@ -20,6 +27,7 @@ class Bencher
     
     while (@cases.length > 0) do
       @actual += @incr
+      @tempOut[@actual] = {}
       rang.each do |r|
         @cases.each do |c|
           puts "\n#{c.name}:"
@@ -32,8 +40,9 @@ class Bencher
             c.failed!
           end
           puts "-> %9.3fs" % rez
-          
+          @tempOut[@actual][c.name] = rez
           if rez >= @treshold
+            @maxValues[c.name] = rez
             puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| GAME OVER %s! |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" % c.name.upcase
           end
         end
@@ -65,12 +74,62 @@ class Bencher
     (@cases+@fails).sort_by { |c| c.points }.reverse.each do |c|
       @results << sprintf("%25s: %3d | time: %9.3f score: %9.3f |\n",c.name,c.points,c.exectime,c.total)
     end
-    
     print @results
+    
+    @jsonOut = @jsonBase
+    @tempOut.each_pair do |k,v|
+      row = []
+      @jsonBase[:cols].each do |c|
+        if c[:id] == 'fib'
+          row << {:v => k.to_s}
+        elsif v.has_key? c[:id]
+          num = v[ c[:id]]
+          if num >= @treshold
+            row << {:v => @treshold}
+          else
+            row << {:v => num}
+          end
+        else
+          row << {:v => @treshold}
+          # row << {:v => @maxValues[ c[:id]]}
+        end
+      end
+       @jsonOut[:rows] << {:c =>row}
+    end
+    @jsonOut[:rows].sort! {|a,b| ("%3s" % a[:c][0][:v]) <=> ("%3s" % b[:c][0][:v])}
+    makeHTML( JSON.generate(@jsonOut))
+    puts "JSON: #{@jsonOut.inspect}"
   end
   
   def init_run_params
     @cases.each { |c| c.init_params }
+  end
+  
+  def makeHTML(jsonV)
+    require 'erb'
+    maxValue = @treshold
+    template = ERB.new <<-EOF
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+  <script>
+    google.load('visualization', '1', {packages:['corechart']});
+
+    google.setOnLoadCallback(drawTable);
+    function drawTable() {
+      var json_table = new google.visualization.LineChart(document.getElementById('table_div_json'));
+      var json_data = new google.visualization.DataTable(<%= jsonV %>, 0.6);
+      json_table.draw(json_data, {width: 1024, height: 768, title: "Fibonacci Benchmark", hAxis: {title: 'fib'}, vAxis: {title: 'time', maxValue: <%= maxValue %>, baseline: 0}});
+    }
+  </script>
+  <body>
+    <div id="table_div_json"></div>
+  </body>
+</html>
+EOF
+    File.open("fib_results.html", "w") do |f|
+      f.puts template.result(binding)
+    end
   end
   
 end

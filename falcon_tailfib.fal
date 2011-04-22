@@ -1,0 +1,15 @@
+#!/usr/local/bin/falcon
+
+function fib(n)
+  tailfib = innerfunc (n,a,b)
+    if n == 0
+      return a
+    else
+      return fself(n-1,b,a+b)
+    end
+  end
+  return tailfib(n,0,1)
+end
+
+>( fib( numeric( args[0])))
+

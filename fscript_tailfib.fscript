@@ -1,0 +1,11 @@
+#! /usr/bin/fscript
+
+fib := [ :n |
+  |tailfib|
+  tailfib := [ :n :a :b |
+    n = 0 ifTrue:[tailfib return:a.]
+    ifFalse:[tailfib return:( tailfib value:(n-1) value:b value:(a+b))].
+  ].
+  fib return:(tailfib value:n value:0 value:1).].
+
+sys out println:(fib value:(NSNumber numberWithInt:((sys args objectAtIndex:0) intValue))).

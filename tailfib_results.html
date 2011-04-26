@@ -7,11 +7,11 @@
   google.setOnLoadCallback(drawTable_racket_interpreted);
   function drawTable_racket_interpreted() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_racket_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"racket interpreted","id":"racket interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.597409963607788},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.318511962890625},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.319350004196167},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.318311929702759},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.318279027938843},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.317985057830811},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.318212032318115},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.318819999694824},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.325647830963135},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.358232021331787},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.364606142044067},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.403294086456299},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.464155912399292},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.785907983779907},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"racket interpreted","id":"racket interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.607132911682129},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.324580907821655},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.326529026031494},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.328359127044678},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.327741861343384},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.33415412902832},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.324034929275513},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.324683904647827},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.32515811920166},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.359650850296021},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.36712384223938},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.388738870620728},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.47147798538208},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.794543027877808},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Racket interpreted Fibonacci Benchmark",
+        title: "Racket interpreted",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -26,11 +26,11 @@
   google.setOnLoadCallback(drawTable_haskell_interpreted);
   function drawTable_haskell_interpreted() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_haskell_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"haskell interpreted","id":"haskell interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.169403076171875},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.16929292678833},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.169248104095459},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.16900110244751},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.170303821563721},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.167548894882202},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.168339014053345},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.170328855514526},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.168719053268433},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.182679891586304},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.187378168106079},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.2447190284729},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.490953922271729},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":1.5290060043335},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"haskell interpreted","id":"haskell interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.17617392539978},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.173320055007935},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.182206869125366},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.175827026367188},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.173469066619873},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.17271900177002},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.174645185470581},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.173215866088867},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.177109003067017},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.189968824386597},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.192584991455078},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.25623083114624},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.502532005310059},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.54503202438354},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Haskell interpreted Fibonacci Benchmark",
+        title: "Haskell interpreted",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -45,11 +45,11 @@
   google.setOnLoadCallback(drawTable_python_3_2);
   function drawTable_python_3_2() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_python_3_2'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"python 3.2","id":"python 3.2"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0705540180206299},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0708911418914795},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0702931880950928},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0714521408081055},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0720789432525635},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0716757774353027},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0722970962524414},{"v":0.197135235133924}]},{"c":[{"v":"996"},{"v":0.0746860504150391},{"v":0.197135235133924}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"python 3.2","id":"python 3.2"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0754878520965576},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0721189975738525},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0711648464202881},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0725359916687012},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.071972131729126},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0725500583648682},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0733530521392822},{"v":0.182516404560634}]},{"c":[{"v":"996"},{"v":0.0807158946990967},{"v":0.182516404560634}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Python 3.2 Fibonacci Benchmark",
+        title: "Python 3.2",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -64,11 +64,11 @@
   google.setOnLoadCallback(drawTable_js_on_V8);
   function drawTable_js_on_V8() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_js_on_V8'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"js on V8","id":"js on V8"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0531949996948242},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.053973913192749},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0533180236816406},{"v":0.202581477165222}]},{"c":[{"v":"78"},{"v":0.0536720752716064},{"v":0.202581477165222}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"js on V8","id":"js on V8"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0542387962341309},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0537259578704834},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0540428161621094},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.0548851490020752},{"v":0.212514823482883}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Js on v8 Fibonacci Benchmark",
+        title: "Js on v8",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -83,11 +83,11 @@
   google.setOnLoadCallback(drawTable_gambit_compiled);
   function drawTable_gambit_compiled() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_gambit_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"gambit compiled","id":"gambit compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0106041431427002},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0103747844696045},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0104231834411621},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0111539363861084},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0111641883850098},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0105760097503662},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0114550590515137},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0116031169891357},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.0123660564422607},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.0142829418182373},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.0215411186218262},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.0475900173187256},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.135782957077026},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.463173151016235},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"gambit compiled","id":"gambit compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0111320018768311},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0111501216888428},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0110421180725098},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.012606143951416},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0117909908294678},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0127890110015869},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0116548538208008},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.012476921081543},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0126938819885254},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0146088600158691},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0282599925994873},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0484631061553955},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.135523080825806},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.468344926834106},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Gambit compiled Fibonacci Benchmark",
+        title: "Gambit compiled",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -102,11 +102,11 @@
   google.setOnLoadCallback(drawTable_racket_compiled);
   function drawTable_racket_compiled() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_racket_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"racket compiled","id":"racket compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.249589920043945},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.252555847167969},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.25196385383606},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.252441883087158},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.252779006958008},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.254121065139771},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.253661870956421},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.255084037780762},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.260425806045532},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.255793809890747},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.266865015029907},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.297040939331055},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.373795032501221},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.698705911636353},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"racket compiled","id":"racket compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.257673025131226},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.25664496421814},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.256985902786255},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.258374929428101},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.260828018188477},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.258271932601929},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.257761001586914},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.259111881256104},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.262166023254395},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.260172843933105},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.26659893989563},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.296909809112549},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.379481077194214},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.703673839569092},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Racket compiled Fibonacci Benchmark",
+        title: "Racket compiled",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -121,11 +121,11 @@
   google.setOnLoadCallback(drawTable_macruby);
   function drawTable_macruby() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_macruby'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"macruby","id":"macruby"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.114219903945923},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.114066123962402},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.114521980285645},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.118146896362305},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.115698099136353},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.117536067962646},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.125003099441528},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.13528299331665},{"v":0.220162272453308}]},{"c":[{"v":"1883"},{"v":0.146991968154907},{"v":0.220162272453308}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"macruby","id":"macruby"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.116102933883667},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.117658138275146},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.116772174835205},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.123297929763794},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.117559909820557},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.11835503578186},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.127418994903564},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.139172077178955},{"v":0.210369057125515}]},{"c":[{"v":"1883"},{"v":0.150989055633545},{"v":0.210369057125515}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Macruby Fibonacci Benchmark",
+        title: "Macruby",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -140,11 +140,11 @@
   google.setOnLoadCallback(drawTable_lua);
   function drawTable_lua() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_lua'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"lua","id":"lua"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00464892387390137},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.00476503372192383},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0048210620880127},{"v":0.202581477165222}]},{"c":[{"v":"68"},{"v":0.00535202026367188},{"v":0.202581477165222}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"lua","id":"lua"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00499105453491211},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.00485086441040039},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00550985336303711},{"v":0.212514823482883}]},{"c":[{"v":"68"},{"v":0.00690197944641113},{"v":0.212514823482883}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Lua Fibonacci Benchmark",
+        title: "Lua",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -159,11 +159,11 @@
   google.setOnLoadCallback(drawTable_bash);
   function drawTable_bash() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_bash'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"bash","id":"bash"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.106071949005127},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.197762966156006},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.402400016784668},{"v":0.202581477165222}]},{"c":[{"v":"63"},{"v":0.697075128555298},{"v":0.202581477165222}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"bash","id":"bash"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.109308958053589},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.210932016372681},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.468827962875366},{"v":0.212514823482883}]},{"c":[{"v":"58"},{"v":0.918590068817139},{"v":0.212514823482883}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Bash Fibonacci Benchmark",
+        title: "Bash",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -178,11 +178,11 @@
   google.setOnLoadCallback(drawTable_sbcl_compiled);
   function drawTable_sbcl_compiled() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_sbcl_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"sbcl compiled","id":"sbcl compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0884618759155273},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.087852954864502},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0876500606536865},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0876040458679199},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0886740684509277},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0901811122894287},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0891680717468262},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0895349979400635},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.0921318531036377},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.0926229953765869},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.100325107574463},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.123347997665405},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.184684038162231},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.396620988845825},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"sbcl compiled","id":"sbcl compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0902140140533447},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0897281169891357},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0919399261474609},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.090609073638916},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0930750370025635},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0909340381622314},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0913290977478027},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0927579402923584},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0926918983459473},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0950472354888916},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.100277185440063},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.124918937683105},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.187242984771729},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.403427124023438},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Sbcl compiled Fibonacci Benchmark",
+        title: "Sbcl compiled",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -197,11 +197,11 @@
   google.setOnLoadCallback(drawTable_jruby);
   function drawTable_jruby() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_jruby'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"jruby","id":"jruby"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.709617137908936},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.705956935882568},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.705806016921997},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.975461959838867},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.755022048950195},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.757226943969727},{"v":0.217915296554565}]},{"c":[{"v":"629"},{"v":0.755608081817627},{"v":0.217915296554565}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"jruby","id":"jruby"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.766016960144043},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.763818979263306},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.772473096847534},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.725951910018921},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.769840955734253},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.766562938690186},{"v":0.210539037531072}]},{"c":[{"v":"629"},{"v":0.973693132400513},{"v":0.210539037531072}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Jruby Fibonacci Benchmark",
+        title: "Jruby",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -216,11 +216,11 @@
   google.setOnLoadCallback(drawTable_python_2_7);
   function drawTable_python_2_7() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_python_2_7'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"python 2.7","id":"python 2.7"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.037585973739624},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0380260944366455},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0374178886413574},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0385620594024658},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0386230945587158},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0395011901855469},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0394289493560791},{"v":0.197135235133924}]},{"c":[{"v":"997"},{"v":0.0437171459197998},{"v":0.197135235133924}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"python 2.7","id":"python 2.7"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0379869937896729},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0383000373840332},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0382809638977051},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0383000373840332},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0393500328063965},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0426149368286133},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0416998863220215},{"v":0.182516404560634}]},{"c":[{"v":"997"},{"v":0.0482399463653564},{"v":0.182516404560634}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Python 2.7 Fibonacci Benchmark",
+        title: "Python 2.7",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -235,11 +235,11 @@
   google.setOnLoadCallback(drawTable_coffee);
   function drawTable_coffee() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_coffee'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"coffee","id":"coffee"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.160442113876343},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.164985179901123},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.162380933761597},{"v":0.202581477165222}]},{"c":[{"v":"78"},{"v":0.158749103546143},{"v":0.202581477165222}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"coffee","id":"coffee"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.162040948867798},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.169927835464478},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.174528121948242},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.189541816711426},{"v":0.212514823482883}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Coffee Fibonacci Benchmark",
+        title: "Coffee",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -254,11 +254,11 @@
   google.setOnLoadCallback(drawTable_ruby_1_9_2);
   function drawTable_ruby_1_9_2() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_ruby_1_9_2'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"ruby 1.9.2","id":"ruby 1.9.2"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0132949352264404},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0132379531860352},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0137028694152832},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0150899887084961},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0138640403747559},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0146591663360596},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0151891708374023},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0182178020477295},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.0228040218353271},{"v":0.241633909089225}]},{"c":[{"v":"2786"},{"v":0.0239989757537842},{"v":0.241633909089225}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"ruby 1.9.2","id":"ruby 1.9.2"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.013761043548584},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0135159492492676},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.013505220413208},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0144748687744141},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0143890380859375},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0170109272003174},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0164198875427246},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0194878578186035},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0236680507659912},{"v":0.225574612617493}]},{"c":[{"v":"2786"},{"v":0.0244979858398438},{"v":0.225574612617493}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Ruby 1.9.2 Fibonacci Benchmark",
+        title: "Ruby 1.9.2",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -273,11 +273,11 @@
   google.setOnLoadCallback(drawTable_perl);
   function drawTable_perl() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_perl'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"perl","id":"perl"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0100619792938232},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.00998902320861816},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0102651119232178},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0105280876159668},{"v":0.202123641967773}]},{"c":[{"v":"93"},{"v":0.0144789218902588},{"v":0.202123641967773}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"perl","id":"perl"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0102910995483398},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0102431774139404},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0120968818664551},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0106329917907715},{"v":0.196185111999512}]},{"c":[{"v":"93"},{"v":0.0117230415344238},{"v":0.196185111999512}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Perl Fibonacci Benchmark",
+        title: "Perl",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -292,11 +292,11 @@
   google.setOnLoadCallback(drawTable_Objective_C);
   function drawTable_Objective_C() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_Objective_C'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"Objective-C","id":"Objective-C"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0101649761199951},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0102460384368896},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0100631713867188},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0105621814727783},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0106079578399658},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0106971263885498},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0110170841217041},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0109109878540039},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.0107560157775879},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.0105438232421875},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.010408878326416},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.0113499164581299},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.0109889507293701},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.011868953704834},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"Objective-C","id":"Objective-C"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0108709335327148},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0104179382324219},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0150680541992188},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0133929252624512},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0107071399688721},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0105819702148438},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0110769271850586},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0117149353027344},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0118908882141113},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0109648704528809},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0107522010803223},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0115399360656738},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.0113840103149414},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.0123870372772217},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Objective-c Fibonacci Benchmark",
+        title: "Objective-c",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -311,11 +311,11 @@
   google.setOnLoadCallback(drawTable_macruby_aot);
   function drawTable_macruby_aot() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_macruby_aot'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"macruby aot","id":"macruby aot"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.065742015838623},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0650820732116699},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0655179023742676},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0661180019378662},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0664060115814209},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0679810047149658},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0739459991455078},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0870227813720703},{"v":0.220162272453308}]},{"c":[{"v":"1870"},{"v":0.0967819690704346},{"v":0.220162272453308}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"macruby aot","id":"macruby aot"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0664138793945312},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0661048889160156},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0670621395111084},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0673601627349854},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0675418376922607},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0700221061706543},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0739870071411133},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0890939235687256},{"v":0.210369057125515}]},{"c":[{"v":"1870"},{"v":0.103718042373657},{"v":0.210369057125515}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Macruby aot Fibonacci Benchmark",
+        title: "Macruby aot",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -330,11 +330,11 @@
   google.setOnLoadCallback(drawTable_tcl);
   function drawTable_tcl() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_tcl'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"tcl","id":"tcl"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0201559066772461},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.020352840423584},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.020129919052124},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0216989517211914},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0224401950836182},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0219078063964844},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0459508895874023},{"v":0.197135235133924}]},{"c":[{"v":"996"},{"v":0.0281550884246826},{"v":0.197135235133924}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"tcl","id":"tcl"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0206570625305176},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0211031436920166},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0210661888122559},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0214178562164307},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0215961933135986},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0229940414428711},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0248870849609375},{"v":0.182516404560634}]},{"c":[{"v":"996"},{"v":0.0375409126281738},{"v":0.182516404560634}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Tcl Fibonacci Benchmark",
+        title: "Tcl",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -349,11 +349,11 @@
   google.setOnLoadCallback(drawTable_nu);
   function drawTable_nu() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_nu'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"nu","id":"nu"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.268401145935059},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0644769668579102},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0642600059509277},{"v":0.202581477165222}]},{"c":[{"v":"78"},{"v":0.0665371417999268},{"v":0.202581477165222}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"nu","id":"nu"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.229560136795044},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0656039714813232},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.104501008987427},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.0677750110626221},{"v":0.212514823482883}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Nu Fibonacci Benchmark",
+        title: "Nu",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -365,14 +365,14 @@
           baseline: 0}});
   }
 
-  google.setOnLoadCallback(drawTable_mono_C_);
-  function drawTable_mono_C_() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_mono_C_'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"mono C#","id":"mono C#"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0666220188140869},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0663189888000488},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.066399097442627},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0676209926605225},{"v":0.202123641967773}]},{"c":[{"v":"138"},{"v":0.0695128440856934},{"v":0.202123641967773}]}]}, 0.6);
+  google.setOnLoadCallback(drawTable_C__Mono);
+  function drawTable_C__Mono() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_C__Mono'));
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"C# Mono","id":"C# Mono"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0630860328674316},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0610959529876709},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0636849403381348},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0626490116119385},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0617449283599854},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0643799304962158},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0633001327514648},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0648379325866699},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0696539878845215},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0880188941955566},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.150388956069946},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.341538906097412},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.991596937179565},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":3.65907788276672},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Mono c# Fibonacci Benchmark",
+        title: "C# mono",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -387,11 +387,11 @@
   google.setOnLoadCallback(drawTable_haskell_compiled);
   function drawTable_haskell_compiled() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_haskell_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"haskell compiled","id":"haskell compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00478100776672363},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.00446414947509766},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.00472903251647949},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.00537681579589844},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.00507116317749023},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.00500583648681641},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.0057370662689209},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.00578594207763672},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.00678396224975586},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.00887799263000488},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.0139961242675781},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.0315189361572266},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.116613149642944},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.563980102539062},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"haskell compiled","id":"haskell compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00489592552185059},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.00459980964660645},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00488805770874023},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.00533294677734375},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.00509786605834961},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.00563383102416992},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.00531601905822754},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.00603699684143066},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0089728832244873},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.00886893272399902},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0143289566040039},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0328919887542725},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.119184017181396},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.630157947540283},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Haskell compiled Fibonacci Benchmark",
+        title: "Haskell compiled",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -406,11 +406,11 @@
   google.setOnLoadCallback(drawTable_scala);
   function drawTable_scala() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_scala'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"scala","id":"scala"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":1.12501811981201},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":1.12628507614136},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":1.12657594680786},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":1.12781405448914},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":1.12893509864807},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":1.13308191299438},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":1.23980593681335},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":1.12913107872009},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":1.18142509460449},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":1.18205118179321},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":1.2401180267334},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":1.23092985153198},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":1.33079600334167},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":1.6836109161377},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"scala","id":"scala"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":1.18775296211243},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":1.13885092735291},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":1.18305206298828},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":1.18485307693481},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":1.18285703659058},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":1.18487596511841},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":1.13691401481628},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":1.18844389915466},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":1.1934859752655},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":1.18791890144348},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":1.28529810905457},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":1.33611607551575},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":1.38573694229126},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.73626685142517},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Scala Fibonacci Benchmark",
+        title: "Scala",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -425,11 +425,30 @@
   google.setOnLoadCallback(drawTable_sbcl_interpreted);
   function drawTable_sbcl_interpreted() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_sbcl_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"sbcl interpreted","id":"sbcl interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.10906720161438},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.107002973556519},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.108247995376587},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.106620073318481},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.107645988464355},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.107586145401001},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.106966018676758},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.107141017913818},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.107843160629272},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.109112977981567},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.117144107818604},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.140596866607666},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.201130151748657},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.41878604888916},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"sbcl interpreted","id":"sbcl interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.112829923629761},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.109174966812134},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.10673999786377},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.108807802200317},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.111216068267822},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.109455108642578},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.111910104751587},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.110940933227539},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.111716032028198},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.114501953125},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.117725133895874},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.144339084625244},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.204746007919312},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.443320035934448},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Sbcl interpreted Fibonacci Benchmark",
+        title: "Sbcl interpreted",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','black'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 2,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_F__Mono);
+  function drawTable_F__Mono() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_F__Mono'));
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"F# Mono","id":"F# Mono"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.107902050018311},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.107266902923584},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.125640153884888},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.115453004837036},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.108929872512817},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.111057996749878},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.110793113708496},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.11316704750061},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.123327016830444},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.130936861038208},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.171625852584839},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.330537080764771},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.935352087020874},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":3.02943301200867},{"v":1.18471739973341}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 300,
+        title: "F# mono",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -444,11 +463,11 @@
   google.setOnLoadCallback(drawTable_go);
   function drawTable_go() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_go'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"go","id":"go"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00510501861572266},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.00578498840332031},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.00503993034362793},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0063929557800293},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.00584602355957031},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.00665092468261719},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.00629591941833496},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0125398635864258},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.0150880813598633},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.0218980312347412},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.0417020320892334},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.105510950088501},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.314017057418823},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":1.05464911460876},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"go","id":"go"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00537395477294922},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.00515103340148926},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00550413131713867},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.00588703155517578},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.00756287574768066},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.00587892532348633},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.00666999816894531},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0117199420928955},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0149979591369629},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0220818519592285},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0428121089935303},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.107726097106934},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.32074499130249},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.08422994613647},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Go Fibonacci Benchmark",
+        title: "Go",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -463,11 +482,11 @@
   google.setOnLoadCallback(drawTable_gambit_interpreted);
   function drawTable_gambit_interpreted() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_gambit_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"gambit interpreted","id":"gambit interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0107150077819824},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0106441974639893},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0107018947601318},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0115878582000732},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.0116591453552246},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.0114350318908691},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.012660026550293},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0122931003570557},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.0138499736785889},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":0.0162549018859863},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":0.0257689952850342},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":0.0581851005554199},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":0.159233093261719},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":0.519421815872192},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"gambit interpreted","id":"gambit interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0115840435028076},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0117549896240234},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0114550590515137},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0126011371612549},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0120129585266113},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.01192307472229},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0120780467987061},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0128200054168701},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0139610767364502},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0166628360748291},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.040302038192749},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0589249134063721},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.160454988479614},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.530016899108887},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Gambit interpreted Fibonacci Benchmark",
+        title: "Gambit interpreted",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -482,11 +501,11 @@
   google.setOnLoadCallback(drawTable_fscript);
   function drawTable_fscript() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_fscript'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"fscript","id":"fscript"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0989480018615723},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.10046911239624},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.105668067932129},{"v":0.202581477165222}]},{"c":[{"v":"78"},{"v":0.109151124954224},{"v":0.202581477165222}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"fscript","id":"fscript"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0999500751495361},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.101688146591187},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.106406927108765},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.112399101257324},{"v":0.212514823482883}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Fscript Fibonacci Benchmark",
+        title: "Fscript",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -501,11 +520,11 @@
   google.setOnLoadCallback(drawTable_falcon);
   function drawTable_falcon() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_falcon'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"falcon","id":"falcon"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0309410095214844},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.013746976852417},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.0134880542755127},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.0144319534301758},{"v":0.202123641967773}]},{"c":[{"v":"92"},{"v":0.0142860412597656},{"v":0.202123641967773}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"falcon","id":"falcon"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0143489837646484},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0143461227416992},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0143160820007324},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0148727893829346},{"v":0.196185111999512}]},{"c":[{"v":"92"},{"v":0.0148000717163086},{"v":0.196185111999512}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Falcon Fibonacci Benchmark",
+        title: "Falcon",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -520,11 +539,11 @@
   google.setOnLoadCallback(drawTable_perl6_rakudo);
   function drawTable_perl6_rakudo() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_perl6_rakudo'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"perl6 rakudo","id":"perl6 rakudo"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.897475004196167},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.90622878074646},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.911951065063477},{"v":0.202581477165222}]},{"c":[{"v":"75"},{"v":1.02213096618652},{"v":0.202581477165222}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"perl6 rakudo","id":"perl6 rakudo"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.90827488899231},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.914822101593018},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.949114799499512},{"v":0.212514823482883}]},{"c":[{"v":"75"},{"v":0.957473993301392},{"v":0.212514823482883}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Perl6 rakudo Fibonacci Benchmark",
+        title: "Perl6 rakudo",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -539,11 +558,11 @@
   google.setOnLoadCallback(drawTable_erlang);
   function drawTable_erlang() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_erlang'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"erlang","id":"erlang"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":1.14509201049805},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":1.16253399848938},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":1.14466214179993},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":1.13559889793396},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":1.14002704620361},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":1.14492893218994},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":1.14054608345032},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":1.14514899253845},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":1.13940191268921},{"v":0.241633909089225}]},{"c":[{"v":"5120"},{"v":1.14149904251099},{"v":0.282820800940196}]},{"c":[{"v":"10240"},{"v":1.14550995826721},{"v":0.294613639513652}]},{"c":[{"v":"20480"},{"v":1.15945196151733},{"v":0.321127971013387}]},{"c":[{"v":"40960"},{"v":1.22374200820923},{"v":0.417157689730326}]},{"c":[{"v":"81920"},{"v":1.54778218269348},{"v":0.806126097838084}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"erlang","id":"erlang"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":1.14484190940857},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":1.15511178970337},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":1.20682811737061},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":1.23736381530762},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":1.14465308189392},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":1.14072680473328},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":1.14737105369568},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":1.14332509040833},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":1.14191889762878},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":1.15041279792786},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":1.1505081653595},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":1.16295981407166},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":1.22751498222351},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.54613304138184},{"v":1.18471739973341}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Erlang Fibonacci Benchmark",
+        title: "Erlang",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -558,11 +577,11 @@
   google.setOnLoadCallback(drawTable_ruby_1_8_7);
   function drawTable_ruby_1_8_7() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_ruby_1_8_7'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"ruby 1.8.7","id":"ruby 1.8.7"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00630593299865723},{"v":0.208656509717306}]},{"c":[{"v":"20"},{"v":0.0062110424041748},{"v":0.196069701512655}]},{"c":[{"v":"40"},{"v":0.00644779205322266},{"v":0.202581477165222}]},{"c":[{"v":"80"},{"v":0.00726699829101562},{"v":0.202123641967773}]},{"c":[{"v":"160"},{"v":0.00720310211181641},{"v":0.217116403579712}]},{"c":[{"v":"320"},{"v":0.00801992416381836},{"v":0.217915296554565}]},{"c":[{"v":"640"},{"v":0.00989007949829102},{"v":0.197135235133924}]},{"c":[{"v":"1280"},{"v":0.0137507915496826},{"v":0.220162272453308}]},{"c":[{"v":"2560"},{"v":0.0256319046020508},{"v":0.241633909089225}]},{"c":[{"v":"2581"},{"v":0.0281569957733154},{"v":0.241633909089225}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"ruby 1.8.7","id":"ruby 1.8.7"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00653505325317383},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0066521167755127},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00672602653503418},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.00748109817504883},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.00775599479675293},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.00836706161499023},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0102241039276123},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0136358737945557},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0257821083068848},{"v":0.225574612617493}]},{"c":[{"v":"2581"},{"v":0.0300321578979492},{"v":0.225574612617493}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "Ruby 1.8.7 Fibonacci Benchmark",
+        title: "Ruby 1.8.7",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -577,94 +596,97 @@
 </script>
 <body>
 
-  <div id="table_div_json_racket_interpreted"></div>
+  <div id="table_div_json_C__Mono"></div>
   <br/>
 
-  <div id="table_div_json_haskell_interpreted"></div>
-  <br/>
-
-  <div id="table_div_json_python_3_2"></div>
-  <br/>
-
-  <div id="table_div_json_js_on_V8"></div>
-  <br/>
-
-  <div id="table_div_json_gambit_compiled"></div>
-  <br/>
-
-  <div id="table_div_json_racket_compiled"></div>
-  <br/>
-
-  <div id="table_div_json_macruby"></div>
-  <br/>
-
-  <div id="table_div_json_lua"></div>
-  <br/>
-
-  <div id="table_div_json_bash"></div>
-  <br/>
-
-  <div id="table_div_json_sbcl_compiled"></div>
-  <br/>
-
-  <div id="table_div_json_jruby"></div>
-  <br/>
-
-  <div id="table_div_json_python_2_7"></div>
-  <br/>
-
-  <div id="table_div_json_coffee"></div>
-  <br/>
-
-  <div id="table_div_json_ruby_1_9_2"></div>
-  <br/>
-
-  <div id="table_div_json_perl"></div>
+  <div id="table_div_json_F__Mono"></div>
   <br/>
 
   <div id="table_div_json_Objective_C"></div>
   <br/>
 
-  <div id="table_div_json_macruby_aot"></div>
+  <div id="table_div_json_bash"></div>
   <br/>
 
-  <div id="table_div_json_tcl"></div>
-  <br/>
-
-  <div id="table_div_json_nu"></div>
-  <br/>
-
-  <div id="table_div_json_mono_C_"></div>
-  <br/>
-
-  <div id="table_div_json_haskell_compiled"></div>
-  <br/>
-
-  <div id="table_div_json_scala"></div>
-  <br/>
-
-  <div id="table_div_json_sbcl_interpreted"></div>
-  <br/>
-
-  <div id="table_div_json_go"></div>
-  <br/>
-
-  <div id="table_div_json_gambit_interpreted"></div>
-  <br/>
-
-  <div id="table_div_json_fscript"></div>
-  <br/>
-
-  <div id="table_div_json_falcon"></div>
-  <br/>
-
-  <div id="table_div_json_perl6_rakudo"></div>
+  <div id="table_div_json_coffee"></div>
   <br/>
 
   <div id="table_div_json_erlang"></div>
   <br/>
 
+  <div id="table_div_json_falcon"></div>
+  <br/>
+
+  <div id="table_div_json_fscript"></div>
+  <br/>
+
+  <div id="table_div_json_gambit_compiled"></div>
+  <br/>
+
+  <div id="table_div_json_gambit_interpreted"></div>
+  <br/>
+
+  <div id="table_div_json_go"></div>
+  <br/>
+
+  <div id="table_div_json_haskell_compiled"></div>
+  <br/>
+
+  <div id="table_div_json_haskell_interpreted"></div>
+  <br/>
+
+  <div id="table_div_json_jruby"></div>
+  <br/>
+
+  <div id="table_div_json_js_on_V8"></div>
+  <br/>
+
+  <div id="table_div_json_lua"></div>
+  <br/>
+
+  <div id="table_div_json_macruby"></div>
+  <br/>
+
+  <div id="table_div_json_macruby_aot"></div>
+  <br/>
+
+  <div id="table_div_json_nu"></div>
+  <br/>
+
+  <div id="table_div_json_perl"></div>
+  <br/>
+
+  <div id="table_div_json_perl6_rakudo"></div>
+  <br/>
+
+  <div id="table_div_json_python_2_7"></div>
+  <br/>
+
+  <div id="table_div_json_python_3_2"></div>
+  <br/>
+
+  <div id="table_div_json_racket_compiled"></div>
+  <br/>
+
+  <div id="table_div_json_racket_interpreted"></div>
+  <br/>
+
   <div id="table_div_json_ruby_1_8_7"></div>
+  <br/>
+
+  <div id="table_div_json_ruby_1_9_2"></div>
+  <br/>
+
+  <div id="table_div_json_sbcl_compiled"></div>
+  <br/>
+
+  <div id="table_div_json_sbcl_interpreted"></div>
+  <br/>
+
+  <div id="table_div_json_scala"></div>
+  <br/>
+
+  <div id="table_div_json_tcl"></div>
   <br/>
 
 </body>

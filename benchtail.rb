@@ -21,7 +21,8 @@ languages = [
   ['lua',                 lambda { |n| `./lua_tailfib.lua #{n.to_i}`}],
   ['macruby',             lambda { |n| `./macruby_tailfib.rb #{n.to_i}`}],
   ['macruby aot',         lambda { |n| `./macruby_tailfib #{n.to_i}`}],
-  ['mono C#',             lambda { |n| `mono csharp_tailfib.exe #{n.to_i}`}],
+  ['C# Mono',           lambda { |n| `/usr/local/bin/mono csharp_tailfib.exe #{n.to_i}`}],
+  ['F# Mono',           lambda { |n| `/usr/local/bin/mono fsharp_tailfib.exe #{n.to_i}`}],
   ['nu',                  lambda { |n| `./nu_tailfib.nu #{n.to_i}`}],
   ['Objective-C',         lambda { |n| `./objc_tailfib -n #{n.to_i}`}],
   ['perl',                lambda { |n| `./perl_tailfib.pl #{n.to_i}`}],
@@ -176,7 +177,7 @@ def printResults(languages)
     json_table.draw(json_data,
       {width: 1024,
         height: 300,
-        title: "<%= name.capitalize %> Fibonacci Benchmark",
+        title: "<%= name.capitalize %>",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
         colors: ['red','black'],
         lineWidth: 3,
@@ -190,7 +191,7 @@ def printResults(languages)
 <% end %>
 </script>
 <body>
-<% jsons.each do |name, data| %>
+<% jsons.keys.sort.each do |name| %>
   <div id="table_div_json_<%= name.gsub(/\s|\\.|-|\#/, "_") %>"></div>
   <br/>
 <% end %>

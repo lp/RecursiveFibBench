@@ -1,7 +1,7 @@
 // csharp_tailfib.cs
 // arguments: A
+// compile with /usr/local/bin/gmcs csharp_tailfib.cs -r:Mono.Security.dll
 using System;
-using Mono.Security;
 using Mono.Math;
 
 public class FibBench

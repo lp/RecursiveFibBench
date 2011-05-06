@@ -98,7 +98,6 @@ class Bencher
     end
     @jsonOut[:rows].sort! {|a,b| ("%3s" % a[:c][0][:v]) <=> ("%3s" % b[:c][0][:v])}
     makeHTML( JSON.generate(@jsonOut))
-    puts "JSON: #{@jsonOut.inspect}"
   end
   
   def init_run_params

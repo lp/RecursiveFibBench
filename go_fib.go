@@ -4,11 +4,17 @@ import (
   "fmt"
   "flag"
   "strconv"
+  "big"
 )
 
-func fib(n int) int {
-  if n > 1 {
-    return fib(n - 1) + fib(n - 2)
+func fib(n *big.Int) *big.Int {
+  one := big.NewInt(1)
+  two := big.NewInt(2)
+  if n.Cmp(one) == 1 {
+    n1 := big.NewInt(0)
+    n2 := big.NewInt(0)
+    nf := big.NewInt(0)
+    return nf.Add(fib( n1.Sub(n,one)), fib(n2.Sub(n,two)))
   }
   return n
 }
@@ -23,6 +29,7 @@ func main() {
   }
   
   for i := 0; i < n; i++ {
-    fmt.Printf("%d\n", fib(i))
+    fmt.Printf("%s\n", fib( big.NewInt( int64(i))).String())
   }
 }
+

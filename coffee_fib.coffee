@@ -3,6 +3,7 @@ fib = (n) ->
     fib(n-1) + fib(n-2)
   else
     n
-    
-for num in [0...process.argv]
-  print fib(num) + "\n"
+
+for num in [0...process.argv[2]]
+  console.log fib(num)
+

@@ -27,10 +27,8 @@ languages = [
   ['macruby aot',         lambda { |n| `./macruby_tailfib #{n.to_i}`}],
   ['C# Mono',             lambda { |n| `mono csharp_tailfib.exe #{n.to_i}`}],
   ['F# Mono',             lambda { |n| `mono fsharp_tailfib.exe #{n.to_i}`}],
-  ['neko',                lambda { |n| `neko neko_tailfib.n #{n.to_i}`}],
   ['nu',                  lambda { |n| `./nu_tailfib.nu #{n.to_i}`}],
   ['Objective-C',         lambda { |n| `./objc_tailfib -n #{n.to_i}`}],
-  ['parrot',              lambda { |n| `parrot parrot_tailfib.pir #{n.to_i}`}],
   ['perl',                lambda { |n| `./perl_tailfib.pl #{n.to_i}`}],
   ['perl6 rakudo',        lambda { |n| `perl6 perl6_tailfib.pl #{n.to_i}`}],
   ['php',                 lambda { |n| `php -f php_tailfib.php #{n.to_i}`}],
@@ -115,7 +113,7 @@ def langFib(lang,num)
   lang
 end
 
-def compileCurves(languages)
+def compileAverage(languages)
   averageCurve = languages.inject( Hash.new) do |memo,lang|
     lang[2].each do |num,rez|
       if $fibs.include?(num)
@@ -129,82 +127,30 @@ def compileCurves(languages)
   averageCurve = averageCurve.inject({}) { |memo, (num,rez) |
     memo[num] = rez / languages.reject { |lang| lang[2][num].nil? }.length; memo
   }
-  
-  languages.map do |lang|
-    lang[5] = {} if lang[5].nil?
-    lang[2].each do |num,rez|
-      lang[5][num] = [rez, averageCurve[num]]
-    end
-    lang
-  end
 end
 
 def printResults(languages)
   jsons = {}
   headerScripts = ""
   bodyText = ""
-  compileCurves( languages).each do |lang|
-    jsonBase = {:cols => [{:id => 'fib', :label => 'fib', :type => 'string'}], :rows => []}
-    jsonBase[:cols] << {:id => lang[0], :label => lang[0], :type => 'number'}
-    jsonBase[:cols] << {:id => "Average", :label => "Average", :type => 'number'}
-    jsonBase[:rows] << {:c => [{:v => '0'}, {:v => 0}, {:v => 0}]}
-    lang[5].keys.sort.each do |num|
-      row = []
-      row << {:v => num.to_s}
-      row << {:v => lang[5][num][0]}
-      
-      if lang[5][num][1].nil?
-        findAverage = lambda { |lnum|
-          return nil if lnum < 1
-          return lang[5][lnum][1] if (not lang[5][lnum].nil?) and (not lang[5][lnum][1].nil?)
-          return findAverage.call(lnum-1)
-        }
-        row << {:v => findAverage.call(num)}
-      else
-        row << {:v => lang[5][num][1]}
-      end
-      
-      jsonBase[:rows] << {:c => row}
+  
+  jsons[:average] = {:label  => "average", :data   => [[0,0]]}
+  compileAverage(languages).each do |num,rez|
+    jsons[:average][:data] << [num,rez]
+  end
+  
+  languages.each do |lang|
+    jsonBase = {:label  => lang[0], :data   => [[0,0]]}
+    lang[2].keys.sort.each do |num|
+      jsonBase[:data] << [num, lang[2][num]]
     end
     jsons[lang[0]] = jsonBase
   end
   
   template = ERB.new <<-EOF
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<html>
-<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-<script>
-  google.load('visualization', '1', {packages:['corechart']});
-<% jsons.each do |name, data| %>
-  google.setOnLoadCallback(drawTable_<%= name.gsub(/\s|\\.|-|\#/, "_") %>);
-  function drawTable_<%= name.gsub(/\s|\\.|-|\#/, "_") %>() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_<%= name.gsub(/\s|\\.|-|\#/, "_") %>'));
-    var json_data = new google.visualization.DataTable(<%= JSON.generate(data) %>, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 266,
-        title: "<%= name.capitalize %>",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','#66aacc'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 1,
-          baseline: 0}});
-  }
-<% end %>
-</script>
-<body>
-<% jsons.keys.sort.each do |name| %>
-  <div id="table_div_json_<%= name.gsub(/\s|\\.|-|\#/, "_") %>"></div>
-  <br/>
-<% end %>
-</body>
-</html>
+var datasets = <%= JSON.generate(jsons)  %>
 EOF
-  File.open("tailfib_results.html", "w") do |f|
+  File.open("dataset.js", "w") do |f|
     f.puts template.result(binding)
   end
 end

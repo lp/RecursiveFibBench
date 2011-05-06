@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
-
-require 'bencher'
+require './bencher.rb'
 
 bench = Bencher.new ARGV[0].to_i, ARGV[1].to_i do
   [["ruby 1.8.7", lambda { |v,r| system("./ruby_fib.rb %d" % v) } ],
@@ -18,8 +17,12 @@ bench = Bencher.new ARGV[0].to_i, ARGV[1].to_i do
     ["objc", lambda { |v,r| system("./objc_fib -n %d" % v) }],
     ["coffee", lambda { |v,r| system("coffee coffee_fib.coffee %d" % v) }],
     ["js on v8", lambda { |v,r| system("d8 js_v8_fib.js -- %d" % v) }],
+    ["js on JavascriptCore", lambda { |v,r| system("/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc js_v8_fib.js -- %d" % v) }],
+    ["js on Rhino", lambda { |v,r| system("java org.mozilla.javascript.tools.shell.Main js_v8_fib.js %d" % v) }],
+    ["js on SpiderMonkey", lambda { |v,r| system("js js_v8_fib.js %d" % v) }],
     ["perl", lambda { |v,r| system("./perl_fib.pl %d" % v) }],
     ["perl6 rakudo", lambda { |v,r| system("perl6 perl6_fib.pl %d" % v) }],
+    ["php", lambda { |v,r| system("php -f php_fib.php %d" % v) }],
     ["lua", lambda { |v,r| system("./lua_fib.lua %d" % v) }],
     ["falcon", lambda { |v,r| system("./falcon_fib.fal %d" % v) }],
     ["f-script", lambda { |v,r| system("./fscript_fib.fscript %d" % v) }],
@@ -35,7 +38,12 @@ bench = Bencher.new ARGV[0].to_i, ARGV[1].to_i do
     ["tcl", lambda { |v,r| system("./tcl_fib.tcl %d" % v) }],
     ["bash", lambda { |v,r| system("./bash_fib.sh %d" % v) }],
     ["gambit interpreted", lambda { |v,r| system("./gambit_fib.scm %d" % v) }],
-    ["gambit compiled", lambda { |v,r| system("./gambit_fib %d" % v) }]
+    ["gambit compiled", lambda { |v,r| system("./gambit_fib %d" % v) }],
+    ['C# Mono', lambda { |v,r| system("mono csharp_fib.exe %d" % v) }],
+    ['F# Mono', lambda { |v,r| system("mono fsharp_fib.exe %d" % v) }],
+    ['Neko', lambda { |v,r| system("neko neko_fib.n %d" % v) }],
+    ['Parrot', lambda { |v,r| system("parrot parrot_fib.pir %d" % v) }],
+    ['D', lambda { |v,r| system("./d_fib %d" % v) }]
     ]
 end
 

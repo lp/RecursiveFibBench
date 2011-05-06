@@ -6,5 +6,5 @@ fib = (n) ->
       tailfib(n-1,b,a+b)
   tailfib(n,0,1)
 
-print fib( process.argv) + "\n"
+console.log fib( process.argv[2])
   

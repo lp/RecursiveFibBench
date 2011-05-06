@@ -4,592 +4,725 @@
 <script>
   google.load('visualization', '1', {packages:['corechart']});
 
-  google.setOnLoadCallback(drawTable_racket_interpreted);
-  function drawTable_racket_interpreted() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_racket_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"racket interpreted","id":"racket interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.607132911682129},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.324580907821655},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.326529026031494},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.328359127044678},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.327741861343384},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.33415412902832},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.324034929275513},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.324683904647827},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.32515811920166},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.359650850296021},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.36712384223938},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.388738870620728},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.47147798538208},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.794543027877808},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Racket interpreted",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_haskell_interpreted);
-  function drawTable_haskell_interpreted() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_haskell_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"haskell interpreted","id":"haskell interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.17617392539978},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.173320055007935},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.182206869125366},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.175827026367188},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.173469066619873},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.17271900177002},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.174645185470581},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.173215866088867},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.177109003067017},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.189968824386597},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.192584991455078},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.25623083114624},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.502532005310059},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.54503202438354},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Haskell interpreted",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_python_3_2);
-  function drawTable_python_3_2() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_python_3_2'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"python 3.2","id":"python 3.2"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0754878520965576},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0721189975738525},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0711648464202881},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0725359916687012},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.071972131729126},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0725500583648682},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0733530521392822},{"v":0.182516404560634}]},{"c":[{"v":"996"},{"v":0.0807158946990967},{"v":0.182516404560634}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Python 3.2",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_js_on_V8);
-  function drawTable_js_on_V8() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_js_on_V8'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"js on V8","id":"js on V8"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0542387962341309},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0537259578704834},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0540428161621094},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.0548851490020752},{"v":0.212514823482883}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Js on v8",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_gambit_compiled);
-  function drawTable_gambit_compiled() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_gambit_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"gambit compiled","id":"gambit compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0111320018768311},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0111501216888428},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0110421180725098},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.012606143951416},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0117909908294678},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0127890110015869},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0116548538208008},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.012476921081543},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0126938819885254},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0146088600158691},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0282599925994873},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0484631061553955},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.135523080825806},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.468344926834106},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Gambit compiled",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_racket_compiled);
-  function drawTable_racket_compiled() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_racket_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"racket compiled","id":"racket compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.257673025131226},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.25664496421814},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.256985902786255},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.258374929428101},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.260828018188477},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.258271932601929},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.257761001586914},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.259111881256104},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.262166023254395},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.260172843933105},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.26659893989563},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.296909809112549},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.379481077194214},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.703673839569092},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Racket compiled",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_macruby);
-  function drawTable_macruby() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_macruby'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"macruby","id":"macruby"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.116102933883667},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.117658138275146},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.116772174835205},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.123297929763794},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.117559909820557},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.11835503578186},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.127418994903564},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.139172077178955},{"v":0.210369057125515}]},{"c":[{"v":"1883"},{"v":0.150989055633545},{"v":0.210369057125515}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Macruby",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_lua);
-  function drawTable_lua() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_lua'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"lua","id":"lua"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00499105453491211},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.00485086441040039},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00550985336303711},{"v":0.212514823482883}]},{"c":[{"v":"68"},{"v":0.00690197944641113},{"v":0.212514823482883}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Lua",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
   google.setOnLoadCallback(drawTable_bash);
   function drawTable_bash() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_bash'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"bash","id":"bash"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.109308958053589},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.210932016372681},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.468827962875366},{"v":0.212514823482883}]},{"c":[{"v":"58"},{"v":0.918590068817139},{"v":0.212514823482883}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"bash","label":"bash","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.18702483177185059},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.4308741092681885},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.8869798183441162},{"v":0.3215884597677934}]},{"c":[{"v":"49"},{"v":1.5912408828735352},{"v":0.3215884597677934}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
-        height: 300,
+        height: 266,
         title: "Bash",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
+        colors: ['red','#66aacc'],
         lineWidth: 3,
         pointSize: 6,
         interpolateNulls: true,
         hAxis: {title: 'fib(n)', logScale: true},
         vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_sbcl_compiled);
-  function drawTable_sbcl_compiled() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_sbcl_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"sbcl compiled","id":"sbcl compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0902140140533447},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0897281169891357},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0919399261474609},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.090609073638916},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0930750370025635},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0909340381622314},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0913290977478027},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0927579402923584},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0926918983459473},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0950472354888916},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.100277185440063},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.124918937683105},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.187242984771729},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.403427124023438},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Sbcl compiled",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_jruby);
-  function drawTable_jruby() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_jruby'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"jruby","id":"jruby"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.766016960144043},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.763818979263306},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.772473096847534},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.725951910018921},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.769840955734253},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.766562938690186},{"v":0.210539037531072}]},{"c":[{"v":"629"},{"v":0.973693132400513},{"v":0.210539037531072}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Jruby",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_python_2_7);
-  function drawTable_python_2_7() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_python_2_7'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"python 2.7","id":"python 2.7"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0379869937896729},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0383000373840332},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0382809638977051},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0383000373840332},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0393500328063965},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0426149368286133},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0416998863220215},{"v":0.182516404560634}]},{"c":[{"v":"997"},{"v":0.0482399463653564},{"v":0.182516404560634}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Python 2.7",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
+          maxValue: 1,
           baseline: 0}});
   }
 
   google.setOnLoadCallback(drawTable_coffee);
   function drawTable_coffee() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_coffee'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"coffee","id":"coffee"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.162040948867798},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.169927835464478},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.174528121948242},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.189541816711426},{"v":0.212514823482883}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"coffee","label":"coffee","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.3876187801361084},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.3277287483215332},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.7648179531097412},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.37332701683044434},{"v":0.4109324879116482}]},{"c":[{"v":"78"},{"v":0.3864879608154297},{"v":0.4109324879116482}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
-        height: 300,
+        height: 266,
         title: "Coffee",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
+        colors: ['red','#66aacc'],
         lineWidth: 3,
         pointSize: 6,
         interpolateNulls: true,
         hAxis: {title: 'fib(n)', logScale: true},
         vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_ruby_1_9_2);
-  function drawTable_ruby_1_9_2() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_ruby_1_9_2'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"ruby 1.9.2","id":"ruby 1.9.2"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.013761043548584},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0135159492492676},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.013505220413208},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0144748687744141},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0143890380859375},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0170109272003174},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0164198875427246},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0194878578186035},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0236680507659912},{"v":0.225574612617493}]},{"c":[{"v":"2786"},{"v":0.0244979858398438},{"v":0.225574612617493}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Ruby 1.9.2",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_perl);
-  function drawTable_perl() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_perl'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"perl","id":"perl"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0102910995483398},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0102431774139404},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0120968818664551},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0106329917907715},{"v":0.196185111999512}]},{"c":[{"v":"93"},{"v":0.0117230415344238},{"v":0.196185111999512}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Perl",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_Objective_C);
-  function drawTable_Objective_C() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_Objective_C'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"Objective-C","id":"Objective-C"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0108709335327148},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0104179382324219},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0150680541992188},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0133929252624512},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0107071399688721},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0105819702148438},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0110769271850586},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0117149353027344},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0118908882141113},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0109648704528809},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0107522010803223},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0115399360656738},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.0113840103149414},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.0123870372772217},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Objective-c",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_macruby_aot);
-  function drawTable_macruby_aot() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_macruby_aot'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"macruby aot","id":"macruby aot"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0664138793945312},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0661048889160156},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0670621395111084},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0673601627349854},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0675418376922607},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0700221061706543},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0739870071411133},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0890939235687256},{"v":0.210369057125515}]},{"c":[{"v":"1870"},{"v":0.103718042373657},{"v":0.210369057125515}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Macruby aot",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_tcl);
-  function drawTable_tcl() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_tcl'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"tcl","id":"tcl"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0206570625305176},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0211031436920166},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0210661888122559},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0214178562164307},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0215961933135986},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0229940414428711},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0248870849609375},{"v":0.182516404560634}]},{"c":[{"v":"996"},{"v":0.0375409126281738},{"v":0.182516404560634}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Tcl",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_nu);
-  function drawTable_nu() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_nu'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"nu","id":"nu"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.229560136795044},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0656039714813232},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.104501008987427},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.0677750110626221},{"v":0.212514823482883}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Nu",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_C__Mono);
-  function drawTable_C__Mono() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_C__Mono'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"C# Mono","id":"C# Mono"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0630860328674316},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0610959529876709},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0636849403381348},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0626490116119385},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0617449283599854},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.0643799304962158},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0633001327514648},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0648379325866699},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0696539878845215},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0880188941955566},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.150388956069946},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.341538906097412},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.991596937179565},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":3.65907788276672},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "C# mono",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_haskell_compiled);
-  function drawTable_haskell_compiled() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_haskell_compiled'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"haskell compiled","id":"haskell compiled"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00489592552185059},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.00459980964660645},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00488805770874023},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.00533294677734375},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.00509786605834961},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.00563383102416992},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.00531601905822754},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.00603699684143066},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0089728832244873},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.00886893272399902},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0143289566040039},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0328919887542725},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.119184017181396},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.630157947540283},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Haskell compiled",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_scala);
-  function drawTable_scala() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_scala'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"scala","id":"scala"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":1.18775296211243},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":1.13885092735291},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":1.18305206298828},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":1.18485307693481},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":1.18285703659058},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":1.18487596511841},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":1.13691401481628},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":1.18844389915466},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":1.1934859752655},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":1.18791890144348},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":1.28529810905457},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":1.33611607551575},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":1.38573694229126},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.73626685142517},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Scala",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_sbcl_interpreted);
-  function drawTable_sbcl_interpreted() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_sbcl_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"sbcl interpreted","id":"sbcl interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.112829923629761},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.109174966812134},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.10673999786377},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.108807802200317},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.111216068267822},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.109455108642578},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.111910104751587},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.110940933227539},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.111716032028198},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.114501953125},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.117725133895874},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.144339084625244},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.204746007919312},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.443320035934448},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Sbcl interpreted",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_F__Mono);
-  function drawTable_F__Mono() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_F__Mono'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"F# Mono","id":"F# Mono"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.107902050018311},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.107266902923584},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.125640153884888},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.115453004837036},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.108929872512817},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.111057996749878},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.110793113708496},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.11316704750061},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.123327016830444},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.130936861038208},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.171625852584839},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.330537080764771},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.935352087020874},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":3.02943301200867},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "F# mono",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_go);
-  function drawTable_go() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_go'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"go","id":"go"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00537395477294922},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.00515103340148926},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00550413131713867},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.00588703155517578},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.00756287574768066},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.00587892532348633},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.00666999816894531},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0117199420928955},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0149979591369629},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0220818519592285},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.0428121089935303},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.107726097106934},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.32074499130249},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.08422994613647},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Go",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_gambit_interpreted);
-  function drawTable_gambit_interpreted() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_gambit_interpreted'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"gambit interpreted","id":"gambit interpreted"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0115840435028076},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0117549896240234},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0114550590515137},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0126011371612549},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.0120129585266113},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.01192307472229},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0120780467987061},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0128200054168701},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0139610767364502},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":0.0166628360748291},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":0.040302038192749},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":0.0589249134063721},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":0.160454988479614},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":0.530016899108887},{"v":1.18471739973341}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Gambit interpreted",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_fscript);
-  function drawTable_fscript() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_fscript'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"fscript","id":"fscript"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0999500751495361},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.101688146591187},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.106406927108765},{"v":0.212514823482883}]},{"c":[{"v":"78"},{"v":0.112399101257324},{"v":0.212514823482883}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Fscript",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_falcon);
-  function drawTable_falcon() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_falcon'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"falcon","id":"falcon"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.0143489837646484},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0143461227416992},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.0143160820007324},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.0148727893829346},{"v":0.196185111999512}]},{"c":[{"v":"92"},{"v":0.0148000717163086},{"v":0.196185111999512}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Falcon",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
-          baseline: 0}});
-  }
-
-  google.setOnLoadCallback(drawTable_perl6_rakudo);
-  function drawTable_perl6_rakudo() {
-    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_perl6_rakudo'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"perl6 rakudo","id":"perl6 rakudo"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.90827488899231},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.914822101593018},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.949114799499512},{"v":0.212514823482883}]},{"c":[{"v":"75"},{"v":0.957473993301392},{"v":0.212514823482883}]}]}, 0.6);
-    json_table.draw(json_data,
-      {width: 1024,
-        height: 300,
-        title: "Perl6 rakudo",
-        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
-        lineWidth: 3,
-        pointSize: 6,
-        interpolateNulls: true,
-        hAxis: {title: 'fib(n)', logScale: true},
-        vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
+          maxValue: 1,
           baseline: 0}});
   }
 
   google.setOnLoadCallback(drawTable_erlang);
   function drawTable_erlang() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_erlang'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"erlang","id":"erlang"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":1.14484190940857},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":1.15511178970337},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":1.20682811737061},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":1.23736381530762},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":1.14465308189392},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":1.14072680473328},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":1.14737105369568},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":1.14332509040833},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":1.14191889762878},{"v":0.225574612617493}]},{"c":[{"v":"5120"},{"v":1.15041279792786},{"v":0.260701179504395}]},{"c":[{"v":"10240"},{"v":1.1505081653595},{"v":0.281327605247498}]},{"c":[{"v":"20480"},{"v":1.16295981407166},{"v":0.331559675080436}]},{"c":[{"v":"40960"},{"v":1.22751498222351},{"v":0.502355149814061}]},{"c":[{"v":"81920"},{"v":1.54613304138184},{"v":1.18471739973341}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"erlang","label":"erlang","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":1.3048388957977295},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":1.2385988235473633},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":1.5347371101379395},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":1.3240151405334473},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":1.310244083404541},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":1.209981918334961},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":1.1947782039642334},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":1.191169023513794},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":1.2196049690246582},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":1.1977226734161377},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":1.2017078399658203},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":1.2210359573364258},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":1.28904390335083},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":1.5322670936584473},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":2.5484888553619385},{"v":5.528875010354178}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
-        height: 300,
+        height: 266,
         title: "Erlang",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
+        colors: ['red','#66aacc'],
         lineWidth: 3,
         pointSize: 6,
         interpolateNulls: true,
         hAxis: {title: 'fib(n)', logScale: true},
         vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_falcon);
+  function drawTable_falcon() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_falcon'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"falcon","label":"falcon","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.019227027893066406},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.01868605613708496},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.026668071746826172},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.02085709571838379},{"v":0.4109324879116482}]},{"c":[{"v":"92"},{"v":0.021911144256591797},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Falcon",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_fscript);
+  function drawTable_fscript() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_fscript'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"fscript","label":"fscript","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.17395591735839844},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.17974090576171875},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.39453792572021484},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.3515908718109131},{"v":0.4109324879116482}]},{"c":[{"v":"78"},{"v":0.2776062488555908},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Fscript",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_gambit_interpreted);
+  function drawTable_gambit_interpreted() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_gambit_interpreted'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"gambit interpreted","label":"gambit interpreted","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.01570582389831543},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.015288829803466797},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.016757726669311523},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.015386104583740234},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.028815269470214844},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.019685029983520508},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.017452001571655273},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.01874828338623047},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.0176389217376709},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.021753787994384766},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.030034780502319336},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.059699058532714844},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.16140413284301758},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":0.5477101802825928},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":2.065631151199341},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Gambit interpreted",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_gambit_compiled);
+  function drawTable_gambit_compiled() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_gambit_compiled'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"gambit compiled","label":"gambit compiled","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.01425790786743164},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.017632007598876953},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.01765584945678711},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.01706981658935547},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.02948307991027832},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.018731117248535156},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.015496015548706055},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.017163991928100586},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.021353960037231445},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.018317699432373047},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.0253908634185791},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.04912400245666504},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.13359308242797852},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":0.4695770740509033},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":1.7940647602081299},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Gambit compiled",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_go);
+  function drawTable_go() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_go'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"go","label":"go","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.011712074279785156},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.010275840759277344},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.010338068008422852},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.009850025177001953},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.009467124938964844},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.009637117385864258},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.010663270950317383},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.016061067581176758},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.016247034072875977},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.025766849517822266},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.0816640853881836},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.11761903762817383},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.2965686321258545},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":3.430272102355957},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":12.747209072113037},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Go",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_haskell_interpreted);
+  function drawTable_haskell_interpreted() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_haskell_interpreted'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"haskell interpreted","label":"haskell interpreted","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.298569917678833},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.2368941307067871},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.37544989585876465},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.4257388114929199},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.3603041172027588},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.2731058597564697},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.2644960880279541},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.22388315200805664},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.25150108337402344},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.2924189567565918},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.26933908462524414},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.32270216941833496},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.5344159603118896},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":1.387902021408081},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":6.197270154953003},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Haskell interpreted",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_haskell_compiled);
+  function drawTable_haskell_compiled() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_haskell_compiled'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"haskell compiled","label":"haskell compiled","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.006559133529663086},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.008948802947998047},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.007180213928222656},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.009389877319335938},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.009499311447143555},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.010777950286865234},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.010337114334106445},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.009747982025146484},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.030759811401367188},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.009669065475463867},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.014480113983154297},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.026912927627563477},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.10031890869140625},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":0.46053504943847656},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":2.489912748336792},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Haskell compiled",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_js_on_V8);
+  function drawTable_js_on_V8() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_js_on_V8'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"js on V8","label":"js on V8","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.06480097770690918},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.11745095252990723},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.06902694702148438},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.07912611961364746},{"v":0.4109324879116482}]},{"c":[{"v":"78"},{"v":0.07356810569763184},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Js on v8",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_js_on_JavascriptCore);
+  function drawTable_js_on_JavascriptCore() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_js_on_JavascriptCore'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"js on JavascriptCore","label":"js on JavascriptCore","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.015883922576904297},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.01482701301574707},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.021012067794799805},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.024973630905151367},{"v":0.4109324879116482}]},{"c":[{"v":"78"},{"v":0.02355504035949707},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Js on javascriptcore",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_js_on_Rhino);
+  function drawTable_js_on_Rhino() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_js_on_Rhino'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"js on Rhino","label":"js on Rhino","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.7443599700927734},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.7355740070343018},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.9780230522155762},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":1.0795490741729736},{"v":0.4109324879116482}]},{"c":[{"v":"78"},{"v":1.080815076828003},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Js on rhino",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_js_on_SpiderMonkey);
+  function drawTable_js_on_SpiderMonkey() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_js_on_SpiderMonkey'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"js on SpiderMonkey","label":"js on SpiderMonkey","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.19903206825256348},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.012084245681762695},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.009727954864501953},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.010637044906616211},{"v":0.4109324879116482}]},{"c":[{"v":"78"},{"v":0.012291908264160156},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Js on spidermonkey",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_jruby);
+  function drawTable_jruby() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_jruby'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"jruby","label":"jruby","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":1.2732579708099365},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":1.24354887008667},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":1.2257680892944336},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":1.7973108291625977},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":1.8719239234924316},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":1.2904431819915771},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":1.2574737071990967},{"v":0.30642428605452826}]},{"c":[{"v":"629"},{"v":1.2125520706176758},{"v":0.30642428605452826}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Jruby",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_lua);
+  function drawTable_lua() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_lua'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"lua","label":"lua","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.0075321197509765625},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.007843017578125},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.008099079132080078},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.010024785995483398},{"v":0.4109324879116482}]},{"c":[{"v":"68"},{"v":0.010087251663208008},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Lua",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_macruby);
+  function drawTable_macruby() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_macruby'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"macruby","label":"macruby","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.20135092735290527},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.15248608589172363},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.1680619716644287},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.27068424224853516},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.2084062099456787},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.17728209495544434},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.18697810173034668},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.19950294494628906},{"v":0.2934866327988474}]},{"c":[{"v":"1883"},{"v":0.29451727867126465},{"v":0.2934866327988474}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Macruby",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_macruby_aot);
+  function drawTable_macruby_aot() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_macruby_aot'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"macruby aot","label":"macruby aot","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.11504793167114258},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.09140419960021973},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.08674788475036621},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.10438680648803711},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.1128089427947998},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.087158203125},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.11735701560974121},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.11314702033996582},{"v":0.2934866327988474}]},{"c":[{"v":"1869"},{"v":0.1353931427001953},{"v":0.2934866327988474}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Macruby aot",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_C__Mono);
+  function drawTable_C__Mono() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_C__Mono'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"C# Mono","label":"C# Mono","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.07787704467773438},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.0851128101348877},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.07607197761535645},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.09312987327575684},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.11822891235351562},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.0826423168182373},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.09552001953125},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.08282804489135742},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.1000969409942627},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.10603117942810059},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.17832493782043457},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.32625627517700195},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.9650650024414062},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":4.415008068084717},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":30.80461096763611},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "C# mono",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_F__Mono);
+  function drawTable_F__Mono() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_F__Mono'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"F# Mono","label":"F# Mono","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.16104507446289062},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.1399369239807129},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.14778709411621094},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.25670909881591797},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.18325400352478027},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.14488482475280762},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.14784002304077148},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.1632838249206543},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.1616661548614502},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.20254278182983398},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.2100811004638672},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.3087739944458008},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.7729079723358154},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":2.7557260990142822},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":8.812865972518921},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "F# mono",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_neko);
+  function drawTable_neko() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_neko'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"neko","label":"neko","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.008441686630249023},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.009798049926757812},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.010383129119873047},{"v":0.3215884597677934}]},{"c":[{"v":"44"},{"v":0.007582902908325195},{"v":0.3215884597677934}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Neko",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_nu);
+  function drawTable_nu() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_nu'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"nu","label":"nu","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.08868789672851562},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.09053206443786621},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.09932875633239746},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.11099791526794434},{"v":0.4109324879116482}]},{"c":[{"v":"78"},{"v":0.08708786964416504},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Nu",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_Objective_C);
+  function drawTable_Objective_C() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_Objective_C'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"Objective-C","label":"Objective-C","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.017616987228393555},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.013118982315063477},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.015148162841796875},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.02364182472229004},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.015375852584838867},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.03110218048095703},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.027899980545043945},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.014936208724975586},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.01592707633972168},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.01711106300354004},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.016716957092285156},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.015857934951782227},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.021561861038208008},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":0.015419960021972656},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":0.01977229118347168},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Objective-c",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_parrot);
+  function drawTable_parrot() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_parrot'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"parrot","label":"parrot","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.012962102890014648},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.011715173721313477},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.013622045516967773},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.014451980590820312},{"v":0.4109324879116482}]},{"c":[{"v":"92"},{"v":0.022472858428955078},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Parrot",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_perl);
+  function drawTable_perl() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_perl'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"perl","label":"perl","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.01466679573059082},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.014066219329833984},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.016431093215942383},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.0392000675201416},{"v":0.4109324879116482}]},{"c":[{"v":"93"},{"v":0.01653599739074707},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Perl",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_perl6_rakudo);
+  function drawTable_perl6_rakudo() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_perl6_rakudo'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"perl6 rakudo","label":"perl6 rakudo","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":1.5545251369476318},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":1.3240280151367188},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":1.4910540580749512},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":2.361999273300171},{"v":0.4109324879116482}]},{"c":[{"v":"75"},{"v":1.3712477684020996},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Perl6 rakudo",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_php);
+  function drawTable_php() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_php'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"php","label":"php","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.11151671409606934},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.06645703315734863},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.07365083694458008},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.1460411548614502},{"v":0.4109324879116482}]},{"c":[{"v":"92"},{"v":0.11217880249023438},{"v":0.4109324879116482}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Php",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_python_2_7);
+  function drawTable_python_2_7() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_python_2_7'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"python 2.7","label":"python 2.7","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.23494291305541992},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.05017900466918945},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.06751894950866699},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.052977800369262695},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.24732398986816406},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.04692196846008301},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.06079506874084473},{"v":0.30642428605452826}]},{"c":[{"v":"997"},{"v":0.05752301216125488},{"v":0.30642428605452826}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Python 2.7",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_python_3_2);
+  function drawTable_python_3_2() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_python_3_2'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"python 3.2","label":"python 3.2","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.21026206016540527},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.09551215171813965},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.10916876792907715},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.13948488235473633},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.15698003768920898},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.09998083114624023},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.0983729362487793},{"v":0.30642428605452826}]},{"c":[{"v":"996"},{"v":0.0963900089263916},{"v":0.30642428605452826}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Python 3.2",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_racket_interpreted);
+  function drawTable_racket_interpreted() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_racket_interpreted'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"racket interpreted","label":"racket interpreted","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.7889969348907471},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.47832393646240234},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.44975900650024414},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.8102169036865234},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.46326518058776855},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.4615030288696289},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.47968196868896484},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.45214390754699707},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.4600381851196289},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.49308180809020996},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.49004292488098145},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.5177879333496094},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.6237890720367432},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":0.9579122066497803},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":2.2231900691986084},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Racket interpreted",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_racket_compiled);
+  function drawTable_racket_compiled() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_racket_compiled'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"racket compiled","label":"racket compiled","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.35712218284606934},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.3411989212036133},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.33774423599243164},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.6082360744476318},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.3418889045715332},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.3437361717224121},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.3461740016937256},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.3371748924255371},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.34612393379211426},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.34735679626464844},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.3735182285308838},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.36739516258239746},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.4517979621887207},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":0.6899750232696533},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":1.7951927185058594},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Racket compiled",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_rubinius);
+  function drawTable_rubinius() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_rubinius'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"rubinius","label":"rubinius","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.6588919162750244},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.6062769889831543},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.6126141548156738},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.9393439292907715},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.6156549453735352},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.6103689670562744},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.6338760852813721},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.6371471881866455},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.7915446758270264},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.7228479385375977},{"v":0.37609637578328453}]},{"c":[{"v":"5788"},{"v":0.8231000900268555},{"v":0.37609637578328453}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Rubinius",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
           baseline: 0}});
   }
 
   google.setOnLoadCallback(drawTable_ruby_1_8_7);
   function drawTable_ruby_1_8_7() {
     var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_ruby_1_8_7'));
-    var json_data = new google.visualization.DataTable({"cols":[{"type":"string","label":"fib","id":"fib"},{"type":"number","label":"ruby 1.8.7","id":"ruby 1.8.7"},{"type":"number","label":"Average","id":"Average"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"10"},{"v":0.00653505325317383},{"v":0.209271946261006}]},{"c":[{"v":"20"},{"v":0.0066521167755127},{"v":0.196911642628331}]},{"c":[{"v":"40"},{"v":0.00672602653503418},{"v":0.212514823482883}]},{"c":[{"v":"80"},{"v":0.00748109817504883},{"v":0.196185111999512}]},{"c":[{"v":"160"},{"v":0.00775599479675293},{"v":0.210076949813149}]},{"c":[{"v":"320"},{"v":0.00836706161499023},{"v":0.210539037531072}]},{"c":[{"v":"640"},{"v":0.0102241039276123},{"v":0.182516404560634}]},{"c":[{"v":"1280"},{"v":0.0136358737945557},{"v":0.210369057125515}]},{"c":[{"v":"2560"},{"v":0.0257821083068848},{"v":0.225574612617493}]},{"c":[{"v":"2581"},{"v":0.0300321578979492},{"v":0.225574612617493}]}]}, 0.6);
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"ruby 1.8.7","label":"ruby 1.8.7","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.02091693878173828},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.019917011260986328},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.019134998321533203},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.035153865814208984},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.030605077743530273},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.022144079208374023},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.02170586585998535},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.02625894546508789},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.03449392318725586},{"v":0.33554572217604695}]},{"c":[{"v":"2786"},{"v":0.05205416679382324},{"v":0.33554572217604695}]}]}, 0.6);
     json_table.draw(json_data,
       {width: 1024,
-        height: 300,
+        height: 266,
         title: "Ruby 1.8.7",
         backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
-        colors: ['red','black'],
+        colors: ['red','#66aacc'],
         lineWidth: 3,
         pointSize: 6,
         interpolateNulls: true,
         hAxis: {title: 'fib(n)', logScale: true},
         vAxis: {title: 'completion time (seconds)',
-          maxValue: 2,
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_ruby_1_9_2);
+  function drawTable_ruby_1_9_2() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_ruby_1_9_2'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"ruby 1.9.2","label":"ruby 1.9.2","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.019176959991455078},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.02000904083251953},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.017581939697265625},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.022333860397338867},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.019217967987060547},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.01989912986755371},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.02079606056213379},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.021025896072387695},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.028676986694335938},{"v":0.33554572217604695}]},{"c":[{"v":"2786"},{"v":0.038465023040771484},{"v":0.33554572217604695}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Ruby 1.9.2",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_sbcl_interpreted);
+  function drawTable_sbcl_interpreted() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_sbcl_interpreted'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"sbcl interpreted","label":"sbcl interpreted","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.16048288345336914},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.17820501327514648},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.12802815437316895},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.2262730598449707},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.14813804626464844},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.13816213607788086},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.13286495208740234},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.15161585807800293},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.14564013481140137},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.1950211524963379},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.1403510570526123},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.18609094619750977},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.2388749122619629},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":2.0864078998565674},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":1.1836841106414795},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Sbcl interpreted",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_sbcl_compiled);
+  function drawTable_sbcl_compiled() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_sbcl_compiled'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"sbcl compiled","label":"sbcl compiled","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.10881924629211426},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.11702108383178711},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.11048412322998047},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.19190502166748047},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.1241610050201416},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.16704607009887695},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.12539887428283691},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":0.14847993850708008},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":0.17444133758544922},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":0.16315174102783203},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":0.12813591957092285},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":0.15091586112976074},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":0.20757079124450684},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":0.4498312473297119},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":1.1131572723388672},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Sbcl compiled",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_scala);
+  function drawTable_scala() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_scala'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"scala","label":"scala","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":1.9003839492797852},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":1.9347870349884033},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":1.7912051677703857},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":2.7663748264312744},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":1.786632776260376},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":1.8158941268920898},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":1.7517821788787842},{"v":0.30642428605452826}]},{"c":[{"v":"1024"},{"v":1.7519278526306152},{"v":0.2934866327988474}]},{"c":[{"v":"2048"},{"v":1.8885221481323242},{"v":0.33554572217604695}]},{"c":[{"v":"4096"},{"v":1.8286521434783936},{"v":0.37609637578328453}]},{"c":[{"v":"8192"},{"v":1.8718838691711426},{"v":0.3594051258904593}]},{"c":[{"v":"16384"},{"v":2.0018439292907715},{"v":0.4051439421517508}]},{"c":[{"v":"32768"},{"v":1.9492199420928955},{"v":0.5532951525279454}]},{"c":[{"v":"65536"},{"v":3.3304920196533203},{"v":1.6092168603624617}]},{"c":[{"v":"131072"},{"v":3.6092000007629395},{"v":5.528875010354178}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Scala",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
+          baseline: 0}});
+  }
+
+  google.setOnLoadCallback(drawTable_tcl);
+  function drawTable_tcl() {
+    var json_table = new google.visualization.LineChart(document.getElementById('table_div_json_tcl'));
+    var json_data = new google.visualization.DataTable({"cols":[{"id":"fib","label":"fib","type":"string"},{"id":"tcl","label":"tcl","type":"number"},{"id":"Average","label":"Average","type":"number"}],"rows":[{"c":[{"v":"0"},{"v":0},{"v":0}]},{"c":[{"v":"8"},{"v":0.10556912422180176},{"v":0.30667475650185033}]},{"c":[{"v":"16"},{"v":0.026295185089111328},{"v":0.275852033966466}]},{"c":[{"v":"32"},{"v":0.03205513954162598},{"v":0.3215884597677934}]},{"c":[{"v":"64"},{"v":0.031180858612060547},{"v":0.4109324879116482}]},{"c":[{"v":"128"},{"v":0.05141115188598633},{"v":0.35839521366616955}]},{"c":[{"v":"256"},{"v":0.027384281158447266},{"v":0.30906402546426526}]},{"c":[{"v":"512"},{"v":0.030019044876098633},{"v":0.30642428605452826}]},{"c":[{"v":"996"},{"v":0.03537917137145996},{"v":0.30642428605452826}]}]}, 0.6);
+    json_table.draw(json_data,
+      {width: 1024,
+        height: 266,
+        title: "Tcl",
+        backgroundColor: {fill: '#dddddd', stroke: '#666666', strokeWidth: 1},
+        colors: ['red','#66aacc'],
+        lineWidth: 3,
+        pointSize: 6,
+        interpolateNulls: true,
+        hAxis: {title: 'fib(n)', logScale: true},
+        vAxis: {title: 'completion time (seconds)',
+          maxValue: 1,
           baseline: 0}});
   }
 
@@ -638,6 +771,15 @@
   <div id="table_div_json_jruby"></div>
   <br/>
 
+  <div id="table_div_json_js_on_JavascriptCore"></div>
+  <br/>
+
+  <div id="table_div_json_js_on_Rhino"></div>
+  <br/>
+
+  <div id="table_div_json_js_on_SpiderMonkey"></div>
+  <br/>
+
   <div id="table_div_json_js_on_V8"></div>
   <br/>
 
@@ -650,13 +792,22 @@
   <div id="table_div_json_macruby_aot"></div>
   <br/>
 
+  <div id="table_div_json_neko"></div>
+  <br/>
+
   <div id="table_div_json_nu"></div>
+  <br/>
+
+  <div id="table_div_json_parrot"></div>
   <br/>
 
   <div id="table_div_json_perl"></div>
   <br/>
 
   <div id="table_div_json_perl6_rakudo"></div>
+  <br/>
+
+  <div id="table_div_json_php"></div>
   <br/>
 
   <div id="table_div_json_python_2_7"></div>
@@ -669,6 +820,9 @@
   <br/>
 
   <div id="table_div_json_racket_interpreted"></div>
+  <br/>
+
+  <div id="table_div_json_rubinius"></div>
   <br/>
 
   <div id="table_div_json_ruby_1_8_7"></div>

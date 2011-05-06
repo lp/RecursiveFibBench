@@ -43,7 +43,8 @@ bench = Bencher.new ARGV[0].to_i, ARGV[1].to_i do
     ['F# Mono', lambda { |v,r| system("mono fsharp_fib.exe %d" % v) }],
     ['Neko', lambda { |v,r| system("neko neko_fib.n %d" % v) }],
     ['Parrot', lambda { |v,r| system("parrot parrot_fib.pir %d" % v) }],
-    ['D', lambda { |v,r| system("./d_fib %d" % v) }]
+    ['D', lambda { |v,r| system("./d_fib %d" % v) }],
+    ['io', lambda { |v,r| system("./io_fib.io %d" % v) }]
     ]
 end
 

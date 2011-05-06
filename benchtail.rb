@@ -17,6 +17,7 @@ languages = [
   ['go',                  lambda { |n| `./go_tailfib #{n.to_i}`}],
   ['haskell interpreted', lambda { |n| `runghc haskell_tailfib.hs #{n.to_i}`}],
   ['haskell compiled',    lambda { |n| `./haskell_tailfib #{n.to_i}`}],
+  ['io',                  lambda { |n| `./io_tailfib.io #{n.to_i}`}],
   ['js on V8',            lambda { |n| `d8 js_tailfib.js -- #{n.to_i}`}],
   ['js on JavascriptCore',lambda { |n| `/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc js_tailfib.js -- #{n.to_i}`}],
   ['js on Rhino',         lambda { |n| `java org.mozilla.javascript.tools.shell.Main js_tailfib.js #{n.to_i}`}],
